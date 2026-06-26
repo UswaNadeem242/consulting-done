@@ -1,11 +1,15 @@
 @import "tailwindcss";
 
 :root {
+  --consult-blue: #073E7F;
   --background: #ffffff;
   --foreground: #171717;
+   --color-axc-gray: #6B7280;
 }
 
 @theme inline {
+  --color-consult-blue: var(--consult-blue);
+  --color-axc-gray: var(--color-axc-gray);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -16,6 +20,7 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+
   }
 }
 
@@ -24,3 +29,42 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* ─── Container ─────────────────────────────────────────────────────── */
+.container-axc {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+@media (max-width: 640px) {
+  .container-axc {
+    padding: 0 1.25rem;
+  }
+}
+
+/* ─── Typography ─────────────────────────────────────────────────────── */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+}
+
+/* section spacing */
+.section-py {
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+}
+
+@media (max-width: 768px) {
+  .section-py {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+ 
