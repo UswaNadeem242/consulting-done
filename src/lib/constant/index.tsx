@@ -123,3 +123,22 @@ export const FOOTER_LINK = [
   { label: 'About', href: '#', className: 'pt-1' },
   { label: 'Contact', href: '#' },
 ];
+
+ export const POINTS = [
+        {
+            title: "Personalized Counseling",
+            description: "We understand that every student has unique aspirations and challenges, which is why we offer tailored solutions that fit individual needs."
+        },
+        {
+            title: "Comprehensive Support",
+            description: "From initial consultation to post-arrival services, we are with you every step of the way."
+        },
+        {
+            title: "Global Reach",
+            description: "We work with universities across multiple countries, ensuring a wide range of options for students."
+        },
+        {
+            title: "Proven Success Rate",
+            description: "Our track record of successful student placements and satisfied clients speaks for itself."
+        }
+    ];

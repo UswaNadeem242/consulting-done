@@ -1,6 +1,7 @@
 
 import Image from "next/image";
 import HeroSection from "./home/component/herosection";
+import AboutSection from "./home/component/aboutsection";
 import WorkSection from "./home/component/work";
 import CountriesOffer from "./home/component/countriesoffer";
 import ServicesOffered from "./home/component/servicesoffered";
@@ -10,9 +11,10 @@ export default function Home() {
   return (
     <div>
       <HeroSection />
+      <AboutSection />
       <WorkSection />
-      <CountriesOffer />
       <ServicesOffered />
+      <CountriesOffer />
       <Leadership />
       <CTASection />
     </div>

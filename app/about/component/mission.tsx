@@ -18,7 +18,7 @@ export default function MissionSection() {
                 </div>
 
                 {/* Image Content */}
-                <div className="relative w-full h-[350px] md:h-[450px] lg:h-[500px] rounded-xl overflow-hidden shadow-xl">
+                <div className="relative w-full max-w-[450px] lg:max-w-[500px] aspect-square rounded-full overflow-hidden shadow-xl mx-auto lg:ml-auto">
                     <img
                         src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1471&auto=format&fit=crop"
                         alt="Students collaborating"

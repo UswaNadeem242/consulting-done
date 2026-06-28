@@ -1,59 +1,74 @@
 import React from 'react';
-import aeroplanemap from "@/public/images/aeroplanmap.png"
-import Image from 'next/image';
+import { Check, Star } from 'lucide-react';
+import { POINTS } from '@/src/lib/constant';
+
 export default function ChooseUs() {
+
+
     return (
-        <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-            <h1 className="text-black text-4xl lg:text-5xl font-bold max-w-2xl mx-auto text-center mb-12 lg:mb-16">
-                Why Choose Us?
-            </h1>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-                <div className=" l">
-                    <Image
-                        src={aeroplanemap}
-                        alt="Students collaborating"
-                        className="w-full h-full object-cover"
-                    />
-                </div>
-                <div>
+        <section className="flex flex-col lg:flex-row w-full min-h-[600px] overflow-hidden">
 
-                    <ul className="text-gray-600 leading-relaxed text-base md:text-lg space-y-4 list-none pl-0">
-                        <li className="flex items-start">
-                            <span className="text-consult-blue mr-2 mt-1">•</span>
-                            <span><strong className="text-black">Personalized Counseling:</strong> We understand that every student has unique aspirations and challenges, which is why we offer tailored solutions that fit individual needs.</span>
-                        </li>
-                        <li className="flex items-start">
-                            <span className="text-consult-blue mr-2 mt-1">•</span>
-                            <span><strong className="text-black">Comprehensive Support:</strong> From initial consultation to post-arrival services, we are with you every step of the way.</span>
-                        </li>
-                        <li className="flex items-start">
-                            <span className="text-consult-blue mr-2 mt-1">•</span>
-                            <span><strong className="text-black">Global Reach:</strong> We work with universities across multiple countries, ensuring a wide range of options for students.</span>
-                        </li>
-                        <li className="flex items-start">
-                            <span className="text-consult-blue mr-2 mt-1">•</span>
-                            <span><strong className="text-black">Proven Success Rate:</strong> Our track record of successful student placements and satisfied clients speaks for itself.</span>
-                        </li>
-                        <li className="flex items-start">
-                            <span className="text-consult-blue mr-2 mt-1">•</span>
-                            <span><strong className="text-black">Ethical Practices:</strong> We adhere to the highest standards of professionalism, ensuring a transparent, honest, and reliable service.</span>
-                        </li>
-                        <li className="flex items-start">
-                            <span className="text-consult-blue mr-2 mt-1">•</span>
-                            <div>
-                                <strong className="text-black">Countries We Specialize In:</strong>
-                                <ul className="mt-2 space-y-2">
-                                    <li className="flex items-start">
-                                        <span className="text-consult-blue mr-2 mt-1">-</span>
-                                        <span><strong className="text-black">United Kingdom:</strong> World-class universities, diverse cultures, and excellent career opportunities.</span>
-                                    </li>
-                                </ul>
+            {/* Left Side: Content */}
+            <div className="w-full lg:w-1/2 bg-consult-blue p-10 sm:p-16 lg:p-20 xl:pl-32 flex flex-col justify-center relative">
+
+                {/* Abstract Background Shapes */}
+                <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+                    <div className="absolute -bottom-1/3 -left-1/4 w-[120%] h-[120%] bg-white/3 rounded-full transform -rotate-12"></div>
+                    <div className="absolute top-1/4 -right-1/4 w-full h-full bg-white/[0.02] rounded-full transform rotate-45"></div>
+                </div>
+
+                <div className="relative z-10 max-w-2xl">
+                    {/* <p className="text-white text-sm font-semibold mb-3 tracking-wide">
+                        Why choose us
+                    </p>
+                    <h2 className="text-white text-4xl lg:text-5xl xl:text-6xl font-bold mb-14 leading-[1.15]">
+                        Why choosing our consulting is the best.
+                    </h2> */}
+
+
+                    <div className="text-left lg:col-span-2 flex flex-col justify-start pt-4 pr-10 mb-8 lg:mb-0">
+                        <div className="flex items-left justify-left gap-2 mb-4">
+                            <p className="text-white text-xs font-bold tracking-widest uppercase flex items-center gap-2">
+                                Why choose us
+                            </p>
+                        </div>
+                        {/* Star with lines */}
+                        <div className="flex items-center justify-left gap-2 mb-4">
+                            <div className="h-px w-8 bg-white"></div>
+                            <Star size={12} fill="#07294D" className="text-white" />
+                            <div className="h-px w-8 bg-white"></div>
+                        </div>
+
+                        <h2 className="text-white text-4xl lg:text-5xl font-bold mb-14">
+                            Why choosing our consulting is the best.
+                        </h2>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-12">
+                        {POINTS?.map((point, idx) => (
+                            <div key={idx} className="flex flex-col">
+                                <Check className="text-white w-7 h-7 mb-4 stroke-[1.5]" />
+                                <h3 className="text-white text-xl font-medium mb-3">
+                                    {point.title}
+                                </h3>
+                                <p className="text-white/70 text-[15px] leading-relaxed pr-2">
+                                    {point.description}
+                                </p>
                             </div>
-                        </li>
-                    </ul>
+                        ))}
+                    </div>
                 </div>
-
             </div>
+
+            {/* Right Side: Image */}
+            <div className="w-full lg:w-1/2 relative min-h-[400px] lg:min-h-auto">
+                <img
+                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1000&auto=format&fit=crop"
+                    alt="Consultant"
+                    className="absolute inset-0 w-full h-full object-cover object-center"
+                />
+            </div>
+
         </section>
     );
 }
