@@ -3,7 +3,7 @@ import { FileText, Package, FileCheck, MonitorPlay, MessageSquare, ArrowUpRight,
 
 const ServicesOffered = () => {
     return (
-        <section className="  lg:py-20 lg:px-6 py-8 px-4 relative overflow-hidden">
+        <section className="  lg:py-20 lg:px-6 py-8 px-0 relative overflow-hidden">
             {/* Soft glow/gradient in the background */}
             <div className="absolute top-0 left-0 w-[500px] h-[700px] bg-blue-500/10 rounded-full blur-[120px] -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
             <div className="absolute bottom-0 right-10 w-[400px] h-[800px] bg-blue-500/10 rounded-full blur-[100px] translate-y-1/2 pointer-events-none" />
@@ -20,22 +20,23 @@ const ServicesOffered = () => {
                             Comprehensive immigration and visa services
                         </h2>
                     </div> */}
-                    <div className="text-left lg:col-span-2 flex flex-col justify-start pt-4 pr-10 mb-8 lg:mb-0">
-                        <div className="flex items-left justify-left gap-2 mb-4">
+                    <div className="text-center lg:text-left lg:col-span-2 flex flex-col justify-center lg:justify-start pt-4 lg:pr-10 mb-4 lg:mb-0">
+                        <div className="flex items-center justify-center lg:justify-start gap-2 mb-4">
                             <p className="text-black text-xs font-bold tracking-widest uppercase flex items-center gap-2">
                                 OUR SERVICES
                             </p>
                         </div>
                         {/* Star with lines */}
-                        <div className="flex items-center justify-left gap-2 mb-4">
+                        {/* <div className="flex items-center justify-left gap-2 mb-4">
                             <div className="h-px w-8 bg-black"></div>
                             <Star size={12} fill="#07294D" className="text-black" />
                             <div className="h-px w-8 bg-black"></div>
-                        </div>
+                        </div> */}
 
-                        <h2 className="text-black text-4xl lg:text-5xl font-bold">
-                            Comprehensive immigration and visa services
+                        <h2 className="text-black text-4xl text-center lg:text-start lg:text-5xl font-bold">
+                            Comprehensive visa services
                         </h2>
+                        <p className='text-axc-gray text-sm text-center lg:text-start w-full  leading-relaxed lg:mb-10  lg:max-w-lg font-medium lg:pt-4 pt-2'>MIB Education Services offers a comprehensive range of services designed to support students at every stage of their study abroad journey, including</p>
                     </div>
                     {/* Service 1: Application assistance */}
                     <div className="bg-[#0e2554] p-8 rounded-xl flex flex-col hover:bg-[#14326e] transition-colors cursor-pointer group">

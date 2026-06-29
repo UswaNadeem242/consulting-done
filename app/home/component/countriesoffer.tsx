@@ -20,9 +20,9 @@ const CountriesOffer = () => {
                     </div>
                     {/* Star with lines */}
                     <div className="flex items-center justify-center gap-2 mb-4">
-                        <div className="h-[1px] w-8 bg-black"></div>
+                        <div className="h-px w-8 bg-black"></div>
                         <Star size={12} fill="#07294D" className="text-black" />
-                        <div className="h-[1px] w-8 bg-black"></div>
+                        <div className="h-px w-8 bg-black"></div>
                     </div>
 
                     <h2 className="text-black text-4xl lg:text-5xl font-bold">

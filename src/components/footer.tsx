@@ -8,12 +8,12 @@ import { FOOTER_LINK } from '../lib/constant';
 export default function Footer() {
     return (
         <footer className="bg-consult-blue text-white pt-16 pb-8 px-4 sm:px-6 lg:px-8 font-sans">
-            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-8">
+            <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-4">
 
                 {/* Column 1: MIBES */}
                 <div>
                     <h3 className="text-white font-bold text-lg mb-6 tracking-wide">MIBES</h3>
-                    <p className="text-white text-sm leading-relaxed mb-6">
+                    <p className="text-white text-sm leading-relaxed mb-6 max-w-[200px]">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
                     </p>
                     <div className="flex items-center gap-4 text-white">
@@ -33,8 +33,8 @@ export default function Footer() {
 
                 {/* Column 2: Company */}
                 <div>
-                    <h3 className="text-white font-bold text-lg mb-6">Company</h3>
-                    <ul className="text-text-white text-sm space-y-3">
+                    <h3 className="text-white font-bold text-lg mb-6 ">Company</h3>
+                    <ul className="text-text-white text-sm space-y-3 ">
                         {FOOTER_LINK?.map((item, index) => (
                             <li key={index} className={item.className || ''}>
                                 {/* {
@@ -85,7 +85,7 @@ export default function Footer() {
             </div>
 
             {/* Footer Bottom */}
-            <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-[white text-center text-white text-sm">
+            <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/10 text-center text-white text-sm">
                 <p>Copyright &copy; 2026 MIB Education Services | Powered by MIB Education Services</p>
             </div>
         </footer>

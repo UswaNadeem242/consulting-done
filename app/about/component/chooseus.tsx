@@ -1,6 +1,7 @@
 import React from 'react';
 import { Check, Star } from 'lucide-react';
 import { POINTS } from '@/src/lib/constant';
+import Image from 'next/image';
 
 export default function ChooseUs() {
 
@@ -9,12 +10,12 @@ export default function ChooseUs() {
         <section className="flex flex-col lg:flex-row w-full min-h-[600px] overflow-hidden">
 
             {/* Left Side: Content */}
-            <div className="w-full lg:w-1/2 bg-consult-blue p-10 sm:p-16 lg:p-20 xl:pl-32 flex flex-col justify-center relative">
+            <div className="w-full lg:w-1/2 bg-consult-blue p-4 sm:p-10 lg:p-20 xl:pl-16 flex flex-col justify-center relative">
 
                 {/* Abstract Background Shapes */}
                 <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
                     <div className="absolute -bottom-1/3 -left-1/4 w-[120%] h-[120%] bg-white/3 rounded-full transform -rotate-12"></div>
-                    <div className="absolute top-1/4 -right-1/4 w-full h-full bg-white/[0.02] rounded-full transform rotate-45"></div>
+                    <div className="absolute top-1/4 -right-1/4 w-full h-full bg-white/2 rounded-full transform rotate-45"></div>
                 </div>
 
                 <div className="relative z-10 max-w-2xl">
@@ -26,25 +27,29 @@ export default function ChooseUs() {
                     </h2> */}
 
 
-                    <div className="text-left lg:col-span-2 flex flex-col justify-start pt-4 pr-10 mb-8 lg:mb-0">
-                        <div className="flex items-left justify-left gap-2 mb-4">
+                    <div className="lg:col-span-2 flex flex-col items-center lg:items-start pt-4 lg:pr-10 mb-8 lg:mb-0 text-center lg:text-left">
+
+                        {/* Heading Label */}
+                        <div className="flex items-center justify-center lg:justify-start gap-2 mb-4 w-full">
                             <p className="text-white text-xs font-bold tracking-widest uppercase flex items-center gap-2">
                                 Why choose us
                             </p>
                         </div>
+
                         {/* Star with lines */}
-                        <div className="flex items-center justify-left gap-2 mb-4">
+                        <div className="flex items-center justify-center lg:justify-start gap-2 mb-4 w-full">
                             <div className="h-px w-8 bg-white"></div>
                             <Star size={12} fill="#07294D" className="text-white" />
                             <div className="h-px w-8 bg-white"></div>
                         </div>
 
-                        <h2 className="text-white text-4xl lg:text-5xl font-bold mb-14">
+                        {/* Title */}
+                        <h2 className="text-white text-4xl lg:text-5xl font-bold lg:mb-14 mb-0 max-w-md lg:max-w-2xl">
                             Why choosing our consulting is the best.
                         </h2>
                     </div>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-12">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-6">
                         {POINTS?.map((point, idx) => (
                             <div key={idx} className="flex flex-col">
                                 <Check className="text-white w-7 h-7 mb-4 stroke-[1.5]" />
@@ -61,11 +66,12 @@ export default function ChooseUs() {
             </div>
 
             {/* Right Side: Image */}
-            <div className="w-full lg:w-1/2 relative min-h-[400px] lg:min-h-auto">
-                <img
+            <div className="w-full lg:w-1/2 relative min-h-[400px] lg:min-h-auto md:block hidden">
+                <Image
                     src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1000&auto=format&fit=crop"
                     alt="Consultant"
-                    className="absolute inset-0 w-full h-full object-cover object-center"
+                    fill
+                    className="object-cover object-center"
                 />
             </div>
 

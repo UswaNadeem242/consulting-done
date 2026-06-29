@@ -1,4 +1,4 @@
-import { Search, PenTool, Smartphone, Upload, Send, House } from 'lucide-react';
+import { Search, PenTool, Smartphone, Upload, Send, House, Layout } from 'lucide-react';
 
 export type NavLink = {
   label: string;
@@ -140,5 +140,24 @@ export const FOOTER_LINK = [
         {
             title: "Proven Success Rate",
             description: "Our track record of successful student placements and satisfied clients speaks for itself."
+        }
+    ];
+
+
+   export const cardsData = [
+        {
+            icon: <PenTool size={28} strokeWidth={1.5} />,
+            title: "Find Course",
+            description: "Unsure about the best universities and courses for you? Use our AI-powered University Course Finder to find exactly what you need, saving you months of research"
+        },
+        {
+            icon: <Layout size={28} strokeWidth={1.5} />,
+            title: "Admission Updates",
+            description: "Stay informed with instant updates on your applications. Effortlessly monitor your application progress and receive timely updates and offers"
+        },
+        {
+            icon: <Send size={28} strokeWidth={1.5} />,
+            title: "Scholarship abroad",
+            description: "Explore our extensive database of over 3,700 scholarships offered by universities, governments, and organizations. Discover fully funded, merit-based, sports..."
         }
     ];

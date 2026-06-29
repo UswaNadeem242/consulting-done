@@ -10,11 +10,13 @@ function AboutPage() {
     return (
         <div>
             <AboutHeroSection />
+
+         <OurMissionSection /> 
+            {/* <StatsSection /> */}
             <MissionSection />
-            <OurMissionSection />
-            <ChooseUs/>
-            <StatsSection />
-            <CTASection/>
+            <ChooseUs />
+
+            <CTASection />
         </div>
 
     )

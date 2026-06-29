@@ -48,7 +48,7 @@ export default function ContactFormSection() {
 
                 {/* Left Column: Form & Map */}
                 <div>
-                    <h2 className="text-[#1a2b4c] text-2xl md:text-3xl font-bold mb-8">
+                    <h2 className="text-black text-2xl md:text-3xl font-bold mb-8">
                         Request Free Consultation
                     </h2>
 
@@ -113,16 +113,16 @@ export default function ContactFormSection() {
 
                 {/* Right Column: Contact Details */}
                 <div>
-                    <h2 className="text-[#1a2b4c] text-2xl md:text-3xl font-bold mb-8">
+                    <h2 className="text-black text-2xl md:text-3xl font-bold mb-8">
                         Get In Touch
                     </h2>
 
                     <div className="space-y-6">
-                        <h3 className="font-semibold text-[#1a2b4c] text-lg">Reach Us</h3>
+                        <h3 className="font-semibold text-black text-lg">Reach Us</h3>
 
                         <div className="flex items-start gap-4">
                             <MapPin className="text-consult-blue w-5 h-5 mt-1 shrink-0" />
-                            <p className="text-gray-600 text-base leading-relaxed">
+                            <p className="text-axc-gray text-sm leading-relaxed">
                                 Main Boulevard, Near Ali Chowk,<br />
                                 Gulistan e Ashar Colony, Multan,<br />
                                 60600, Punjab, Pakistan
@@ -131,28 +131,21 @@ export default function ContactFormSection() {
 
                         <div className="flex items-center gap-4">
                             <Mail className="text-consult-blue w-5 h-5 shrink-0" />
-                            <a href="mailto:admissions@mibes.com.pk" className="text-gray-600 text-base hover:text-consult-blue transition-colors">
+                            <a href="mailto:admissions@mibes.com.pk" className="text-axc-gray text-sm hover:text-consult-blue transition-colors">
                                 admissions@mibes.com.pk
                             </a>
                         </div>
 
                         <div className="flex items-center gap-4">
                             <Phone className="text-consult-blue w-5 h-5 shrink-0" />
-                            <a href="tel:00923136244122" className="text-gray-600 text-base hover:text-consult-blue transition-colors">
+                            <a href="tel:00923136244122" className="text-axc-gray text-sm hover:text-consult-blue transition-colors">
                                 0092-313-6244122
                             </a>
                         </div>
 
                         <div className="flex items-center gap-4">
-                            {/* <Facebook className="text-consult-blue w-5 h-5 shrink-0" />
-                            <a href="https://www.facebook.com/MIBEDUCATIONSERVICES/" target="_blank" rel="noopener noreferrer" className="text-gray-600 text-base hover:text-consult-blue transition-colors break-all">
-                                https://www.facebook.com/MIBEDUCATIONSERVICES/
-                            </a> */}
-                        </div>
-
-                        <div className="flex items-center gap-4">
                             <MessageCircle className="text-consult-blue w-5 h-5 shrink-0" />
-                            <a href="#" className="text-gray-600 text-base hover:text-consult-blue transition-colors">
+                            <a href="#" className="text-axc-gray text-sm hover:text-consult-blue transition-colors">
                                 Whatsapp Group
                             </a>
                         </div>

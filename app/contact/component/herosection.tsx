@@ -3,7 +3,7 @@ import React from 'react';
 export default function ContactHeroSection() {
     return (
         <section
-            className="relative w-full min-h-[400px] md:min-h-[500px] flex items-center justify-center overflow-hidden"
+            className="relative w-full min-h-[400px] md:min-h-[300px] flex items-center justify-center overflow-hidden"
             style={{
                 backgroundImage: "url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop')",
                 backgroundSize: 'cover',
@@ -18,8 +18,8 @@ export default function ContactHeroSection() {
                 <h1 className="text-5xl md:text-6xl font-bold mb-4 tracking-wide">
                     Contact Us
                 </h1>
-                
-                <h2 className="text-lg md:text-xl font-bold mb-4">
+
+                {/* <h2 className="text-lg md:text-xl font-bold mb-4">
                     Contact for Premium Business Services
                 </h2>
 
@@ -27,7 +27,7 @@ export default function ContactHeroSection() {
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo.
                     <br className="hidden sm:block" />
                     Praesent mattis commodo augue. Aliquam ornare hendrerit augue.
-                </p>
+                </p> */}
             </div>
         </section>
     );
