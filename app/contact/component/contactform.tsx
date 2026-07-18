@@ -120,26 +120,26 @@ export default function ContactFormSection() {
                     <div className="space-y-6">
                         <h3 className="font-semibold text-black text-lg">Reach Us</h3>
 
-                        <div className="flex items-start gap-4">
+                        {/* <div className="flex items-start gap-4">
                             <MapPin className="text-consult-blue w-5 h-5 mt-1 shrink-0" />
                             <p className="text-axc-gray text-sm leading-relaxed">
                                 Main Boulevard, Near Ali Chowk,<br />
                                 Gulistan e Ashar Colony, Multan,<br />
                                 60600, Punjab, Pakistan
                             </p>
-                        </div>
+                        </div> */}
 
                         <div className="flex items-center gap-4">
                             <Mail className="text-consult-blue w-5 h-5 shrink-0" />
-                            <a href="mailto:admissions@mibes.com.pk" className="text-axc-gray text-sm hover:text-consult-blue transition-colors">
-                                admissions@mibes.com.pk
+                            <a href="mailto:mibkconsultancyltd@gmail.com" className="text-axc-gray text-sm hover:text-consult-blue transition-colors">
+                                mibkconsultancyltd@gmail.com
                             </a>
                         </div>
 
                         <div className="flex items-center gap-4">
                             <Phone className="text-consult-blue w-5 h-5 shrink-0" />
-                            <a href="tel:00923136244122" className="text-axc-gray text-sm hover:text-consult-blue transition-colors">
-                                0092-313-6244122
+                            <a href="tel:44 7721 575886" className="text-axc-gray text-sm hover:text-consult-blue transition-colors">
+                            +44 7721 575886
                             </a>
                         </div>
 

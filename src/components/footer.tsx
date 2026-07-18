@@ -2,7 +2,8 @@ import React from 'react';
 import { MessageCircleMore, Phone } from 'lucide-react';
 import Link from 'next/link';
 import { FOOTER_LINK } from '../lib/constant';
-
+import logo from "@/public/images/logo.png"
+import Image from 'next/image';
 
 
 export default function Footer() {
@@ -12,7 +13,8 @@ export default function Footer() {
 
                 {/* Column 1: MIBES */}
                 <div>
-                    <h3 className="text-white font-bold text-lg mb-6 tracking-wide">MIBES</h3>
+                    <Image src={logo} alt="logo" width={150} height={100} />
+                    {/* <h3 className="text-white font-bold text-lg mb-6 tracking-wide">Logo</h3> */}
                     <p className="text-white text-sm leading-relaxed mb-6 max-w-[200px]">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
                     </p>
@@ -68,16 +70,16 @@ export default function Footer() {
                 <div>
                     <h3 className="text-white font-bold text-lg mb-6">Get In Touch</h3>
                     <div className="text-white text-sm space-y-4">
-                        <p className="leading-relaxed">
+                        {/* <p className="leading-relaxed">
                             Main Boulevard, Near Ali Chowk,<br />
                             Gulistan e Ashar Colony, Multan,<br />
                             60600, Punjab, Pakistan
+                        </p> */}
+                        <p>
+                            <a href="mailto:mibkconsultancyltd@gmail.com" className="hover:text-white transition-colors">mibkconsultancyltd@gmail.com</a>
                         </p>
                         <p>
-                            <a href="mailto:admissions@mibes.com.pk" className="hover:text-white transition-colors">admissions@mibes.com.pk</a>
-                        </p>
-                        <p>
-                            <a href="tel:00923136244122" className="hover:text-white transition-colors">0092-313-6244122</a>
+                            <a href="tel:00923136244122" className="hover:text-white transition-colors">+44 7721 575886</a>
                         </p>
                     </div>
                 </div>

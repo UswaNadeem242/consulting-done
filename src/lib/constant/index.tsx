@@ -120,8 +120,8 @@ export const FOOTER_LINK = [
   //     { label: 'EUROPE', href: '#' },
   //   ]
   // },
-  { label: 'About', href: '#', className: 'pt-1' },
-  { label: 'Contact', href: '#' },
+  { label: 'About', href: '/about', className: 'pt-1' },
+  { label: 'Contact', href: '/contact' },
 ];
 
  export const POINTS = [

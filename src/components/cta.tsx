@@ -16,7 +16,7 @@ export default function CTASection() {
         </div>
         <div className="flex justify-center mt-5 ">
           <Button variant='primary' className='text-white font-medium py-3 px-8 rounded whitespace-nowrap'>
-            1-800-1234-567
+           +44 7721 575886
           </Button>
          
         </div>

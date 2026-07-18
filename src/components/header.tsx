@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { TextAlignJustify, X } from 'lucide-react';
 import { Button } from '@/ui/button';
 import { navLinks } from '@/src/lib/constant';
-
+import Image from 'next/image';
+import logo from "@/public/images/logo.png"
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => {
@@ -15,7 +16,7 @@ const Header = () => {
   return (
     <header className="flex justify-between    items-center px-8 py-4 bg-white text-consult-blue sticky top-0 z-[1000] font-sans ">
       <Link href="/" className="text-2xl font-bold tracking-[0.5px] no-underline text-consult-blue">
-        LOGO
+        <Image src={logo} alt='logo' width={100} height={100} />
       </Link>
       <button className="block lg:hidden bg-transparent border-none text-consult-blue cursor-pointer p-2" onClick={toggleMenu} aria-label="Toggle menu">
         {isMenuOpen ? (

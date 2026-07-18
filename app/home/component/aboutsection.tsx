@@ -1,8 +1,8 @@
 import React from 'react';
-import { Phone, Star } from 'lucide-react';
+import { Phone, ShieldCheck, Star } from 'lucide-react';
 import { Button } from '@/ui/button';
 import Image from 'next/image';
-
+import profile from "@/public/images/profile.jpg"
 const AboutSection = () => {
     return (
         <section className="bg-white lg:py-20 lg:px-6 py-8 px-0 overflow-hidden">
@@ -38,7 +38,7 @@ const AboutSection = () => {
                         </p>
 
                         {/* Contact Info & Signature */}
-                        <div className="flex flex-col sm:flex-row sm:items-center gap-8 mb-12 w-full">
+                        <div className="flex flex-col gap-6 mb-12 w-full">
 
                             {/* Phone Block */}
                             <div className="flex items-center gap-4">
@@ -47,8 +47,19 @@ const AboutSection = () => {
                                 </div>
                                 <div className="flex flex-col">
                                     <span className="text-axc-gray text-sm font-medium mb-0.5">Call us anytime</span>
-                                    <span className="text-consult-blue text-lg font-bold tracking-wide">+256 56778.5678</span>
+                                    <span className="text-consult-blue text-lg font-bold tracking-wide">+44 7721 575886</span>
                                 </div>
+                                 
+                            </div>
+                                <div className="flex items-center gap-4">
+                                <div className="w-14 h-14 bg-consult-blue rounded-full flex items-center justify-center text-white shrink-0 shadow-lg">
+                                    <ShieldCheck size={22} strokeWidth={1.5} />
+                                </div>
+                                <div className="flex flex-col">
+                                    <span className="text-axc-gray text-sm font-medium mb-0.5">Authentication Code</span>
+                                    <span className="text-consult-blue text-lg font-bold tracking-wide">WPFLDWZHPQQRYSFE</span>
+                                </div>
+                                 
                             </div>
 
                             {/* Signature Placeholder */}
@@ -81,13 +92,15 @@ const AboutSection = () => {
                         </div>
 
                         {/* Progress Widget (Absolute Positioned) */}
-                        <div className="absolute -bottom-8 left-0 sm:left-10 lg:-left-12 bg-consult-blue rounded-xl p-8 flex flex-col items-center justify-center shadow-2xl z-10 w-56 md:block hidden">
+                        <div className="absolute -bottom-8 left-0 sm:left-10 lg:-left-12   rounded-xl p-8 flex flex-col items-center justify-center   z-10 w-72  md:block hidden">
                             {/* Circular Progress Ring */}
-                            <div className="relative w-20 h-20 mb-5">
+                            <Image src={profile} alt="profile" width={900} height={900} className="  object-cover" />
+
+                            {/* <div className="relative w-20 h-20 mb-5">
                                 <svg className="w-full h-full transform -rotate-90" viewBox="0 0 100 100">
-                                    {/* Track */}
+                                  
                                     <circle cx="50" cy="50" r="44" fill="none" stroke="#214BE0" strokeWidth="4" />
-                                    {/* Progress (80%) */}
+                                   
                                     <circle
                                         cx="50" cy="50" r="44"
                                         fill="none"
@@ -98,13 +111,13 @@ const AboutSection = () => {
                                         strokeLinecap="round"
                                     />
                                 </svg>
-                                {/* Percentage Text inside ring */}
+                                 
                                 <div className="absolute inset-0 flex items-center justify-center">
                                     <span className="text-white font-bold text-sm">80%</span>
                                 </div>
-                            </div>
+                            </div> */}
 
-                            <span className="text-white font-bold text-sm capitalize tracking-wide">successful  student</span>
+                            {/* <span className="text-white font-bold text-sm capitalize tracking-wide">successful  student</span> */}
                         </div>
 
                     </div>
