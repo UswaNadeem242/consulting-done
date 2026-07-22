@@ -2,7 +2,7 @@ import React from 'react';
 import { MessageCircleMore, Phone } from 'lucide-react';
 import Link from 'next/link';
 import { FOOTER_LINK } from '../lib/constant';
-import logo from "@/public/images/logo.png"
+import logo from "@/public/images/footerlogo.png"
 import Image from 'next/image';
 
 

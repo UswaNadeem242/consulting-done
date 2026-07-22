@@ -14,7 +14,8 @@ const Header = () => {
   };
   const navLinkClasses = "text-consult-blue no-underline text-[1.1rem] lg:text-[0.95rem] font-medium transition-colors duration-200 flex items-center justify-start gap-1 cursor-pointer w-full lg:w-auto py-3 lg:py-0 hover:text-blue-600";
   return (
-    <header className="flex justify-between    items-center px-8 py-4 bg-white text-consult-blue sticky top-0 z-[1000] font-sans ">
+    <div className='container mx-auto max-w-7xl'>
+       <header className="flex justify-between items-center px-8 py-4 bg-white text-consult-blue sticky top-0 z-[1000] font-sans ">
       <Link href="/" className="text-2xl font-bold tracking-[0.5px] no-underline text-consult-blue">
         <Image src={logo} alt='logo' width={100} height={100} />
       </Link>
@@ -49,9 +50,10 @@ const Header = () => {
             </Link>
           )
         )}
-        <Button variant='primary' className='rounded-full text-sm capitalize' href='#'>Search</Button>
       </nav>
     </header>
+    </div>
+   
   );
 };
 

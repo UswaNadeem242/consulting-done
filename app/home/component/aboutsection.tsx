@@ -2,7 +2,7 @@ import React from 'react';
 import { Phone, ShieldCheck, Star } from 'lucide-react';
 import { Button } from '@/ui/button';
 import Image from 'next/image';
-import profile from "@/public/images/profile.jpg"
+import profile from "@/public/images/profile.png"
 const AboutSection = () => {
     return (
         <section className="bg-white lg:py-20 lg:px-6 py-8 px-0 overflow-hidden">
@@ -43,7 +43,7 @@ const AboutSection = () => {
                             {/* Phone Block */}
                             <div className="flex items-center gap-4">
                                 <div className="w-14 h-14 bg-consult-blue rounded-full flex items-center justify-center text-white shrink-0 shadow-lg">
-                                    <Phone size={22} strokeWidth={1.5} />
+                                    <Phone size={19} strokeWidth={1.5} />
                                 </div>
                                 <div className="flex flex-col">
                                     <span className="text-axc-gray text-sm font-medium mb-0.5">Call us anytime</span>
