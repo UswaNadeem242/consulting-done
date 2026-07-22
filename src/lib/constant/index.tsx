@@ -1,5 +1,6 @@
 import { Search, PenTool, Smartphone, Upload, Send, House, Layout } from 'lucide-react';
-
+import img1 from "@/public/images/babar.jpeg"
+import img3 from "@/public/images/abdullah.jpeg"
 export type NavLink = {
   label: string;
   href: string;
@@ -85,9 +86,9 @@ export const DESTINATION = [
 export const TEAM_MEMBERS = [
   {
     id: 1,
-    name: "Roman Frederick",
-    role: "Regional Manager",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=256&auto=format&fit=crop",
+    name: "Babar Khail",
+    role: "Founder",
+    image: img1,
   },
   {
     id: 2,
@@ -97,11 +98,11 @@ export const TEAM_MEMBERS = [
   },
   {
     id: 3,
-    name: "Esther Howard",
-    role: "President of Sales",
-    image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=256&auto=format&fit=crop",
+    name: "Abdullah Mubashar",
+    role: "American Dealing Officer",
+    image: img3,
   },
- 
+
 ];
 
 export const FOOTER_LINK = [
@@ -124,40 +125,40 @@ export const FOOTER_LINK = [
   { label: 'Contact', href: '/contact' },
 ];
 
- export const POINTS = [
-        {
-            title: "Personalized Counseling",
-            description: "We understand that every student has unique aspirations and challenges, which is why we offer tailored solutions that fit individual needs."
-        },
-        {
-            title: "Comprehensive Support",
-            description: "From initial consultation to post-arrival services, we are with you every step of the way."
-        },
-        {
-            title: "Global Reach",
-            description: "We work with universities across multiple countries, ensuring a wide range of options for students."
-        },
-        {
-            title: "Proven Success Rate",
-            description: "Our track record of successful student placements and satisfied clients speaks for itself."
-        }
-    ];
+export const POINTS = [
+  {
+    title: "Personalized Counseling",
+    description: "We understand that every student has unique aspirations and challenges, which is why we offer tailored solutions that fit individual needs."
+  },
+  {
+    title: "Comprehensive Support",
+    description: "From initial consultation to post-arrival services, we are with you every step of the way."
+  },
+  {
+    title: "Global Reach",
+    description: "We work with universities across multiple countries, ensuring a wide range of options for students."
+  },
+  {
+    title: "Proven Success Rate",
+    description: "Our track record of successful student placements and satisfied clients speaks for itself."
+  }
+];
 
 
-   export const cardsData = [
-        {
-            icon: <PenTool size={28} strokeWidth={1.5} />,
-            title: "Find Course",
-            description: "Unsure about the best universities and courses for you? Use our AI-powered University Course Finder to find exactly what you need, saving you months of research"
-        },
-        {
-            icon: <Layout size={28} strokeWidth={1.5} />,
-            title: "Admission Updates",
-            description: "Stay informed with instant updates on your applications. Effortlessly monitor your application progress and receive timely updates and offers"
-        },
-        {
-            icon: <Send size={28} strokeWidth={1.5} />,
-            title: "Scholarship abroad",
-            description: "Explore our extensive database of over 3,700 scholarships offered by universities, governments, and organizations. Discover fully funded, merit-based, sports..."
-        }
-    ];
+export const cardsData = [
+  {
+    icon: <PenTool size={28} strokeWidth={1.5} />,
+    title: "Find Course",
+    description: "Unsure about the best universities and courses for you? Use our AI-powered University Course Finder to find exactly what you need, saving you months of research"
+  },
+  {
+    icon: <Layout size={28} strokeWidth={1.5} />,
+    title: "Admission Updates",
+    description: "Stay informed with instant updates on your applications. Effortlessly monitor your application progress and receive timely updates and offers"
+  },
+  {
+    icon: <Send size={28} strokeWidth={1.5} />,
+    title: "Scholarship abroad",
+    description: "Explore our extensive database of over 3,700 scholarships offered by universities, governments, and organizations. Discover fully funded, merit-based, sports..."
+  }
+];

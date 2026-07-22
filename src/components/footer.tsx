@@ -76,10 +76,11 @@ export default function Footer() {
                             60600, Punjab, Pakistan
                         </p> */}
                         <p>
-                            <a href="mailto:mibkconsultancyltd@gmail.com" className="hover:text-white transition-colors">mibkconsultancyltd@gmail.com</a>
+                            <Link href="mailto:mibkconsultancyltd@gmail.com" className="hover:text-white transition-colors">mibkconsultancyltd@gmail.com</Link>
                         </p>
-                        <p>
-                            <a href="tel:00923136244122" className="hover:text-white transition-colors">+44 7721 575886</a>
+                        <p className='flex flex-col gap-1'>
+                            <Link href="tel:00923136244122" className="hover:text-white transition-colors">UK : +44 7721 575886</Link>
+                            <Link href="tel:14092124858" className="hover:text-white transition-colors">USA : +1 (409) 212-4858</Link>
                         </p>
                     </div>
                 </div>

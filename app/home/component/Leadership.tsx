@@ -5,6 +5,7 @@ import FacebookSvgIcon from "@/public/icon/facebook"
 import InstagramSvgIcon from "@/public/icon/instagram"
 import LinkdeinSvgIcon from "@/public/icon/linkdein"
 import Link from 'next/link';
+import Image from 'next/image';
 const Leadership = () => {
   return (
     <section className="relative py-24 bg-[#FAFAFA] overflow-hidden">
@@ -45,11 +46,12 @@ const Leadership = () => {
               className="relative w-full max-w-[320px] mx-auto group"
             >
               {/* Image Container */}
-              <div className="w-full aspect-[4/5] rounded-2xl overflow-hidden shadow-md">
-                <img
+              <div className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden shadow-md">
+                <Image
                   src={member.image}
                   alt={member.name}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-100"
                 />
               </div>
 
@@ -65,13 +67,13 @@ const Leadership = () => {
                 <div className="w-full h-px bg-gray-100 mb-4"></div>
 
                 <div className="flex items-center justify-center gap-2">
-                  <Link href="#" className="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center text-consult-blue hover:bg-consult-blue hover:text-white transition-colors">
+                  <Link href="#" className="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center text-consult-blue hover:text-white transition-colors">
                     <LinkdeinSvgIcon size={14} fill="currentColor" strokeWidth={0} />
                   </Link>
-                  <Link href="#" className="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center text-consult-blue hover:bg-consult-blue hover:text-white transition-colors">
+                  <Link href="https://www.facebook.com/share/191NQmHnpK/" className="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center text-consult-blue  hover:text-white transition-colors">
                     <FacebookSvgIcon size={12} fill="currentColor" strokeWidth={0} />
                   </Link>
-                  <Link href="#" className="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center text-consult-blue hover:bg-consult-blue hover:text-white transition-colors">
+                  <Link href="#" className="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center text-consult-blue hover:text-white transition-colors">
                     <InstagramSvgIcon size={14} />
                   </Link>
                 </div>
