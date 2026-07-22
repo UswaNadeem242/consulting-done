@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from '@/ui/button';
-
+import banner from "@/public/images/herosection.jpeg"
+import Image from 'next/image';
 const HeroSection = () => {
     return (
         <section className="relative w-full min-h-screen flex items-center bg-white overflow-hidden pt-24 pb-32 lg:pt-0 lg:pb-0">
@@ -9,8 +10,8 @@ const HeroSection = () => {
             <div className="absolute top-0 left-0 w-full lg:w-1/2 h-full z-0">
                 <div className="relative w-full h-full">
                     {/* Placeholder for the man in suit */}
-                    <img
-                        src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1000&auto=format&fit=crop"
+                    <Image
+                        src={banner}
                         alt="Consultant"
                         className="w-full h-full object-cover object-top"
                     />
