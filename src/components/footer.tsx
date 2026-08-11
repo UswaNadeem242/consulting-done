@@ -15,8 +15,11 @@ export default function Footer() {
                 <div>
                     <Image src={logo} alt="logo" width={150} height={100} />
                     {/* <h3 className="text-white font-bold text-lg mb-6 tracking-wide">Logo</h3> */}
-                    <p className="text-white text-sm leading-relaxed mb-6 max-w-[200px]">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                    <p className="text-white text-sm leading-relaxed mb-6 max-w-[250px] mt-2">
+                        MIBK Consultancy helps students from Pakistan pursue
+                        their study goals in the UK and USA with personalized
+                        guidance for university admissions, scholarships, and
+                        student visa applications.
                     </p>
                     <div className="flex items-center gap-4 text-white">
                         <Link href="#" aria-label="Facebook" className="hover:text-axc-gray transition-colors">
@@ -89,7 +92,7 @@ export default function Footer() {
 
             {/* Footer Bottom */}
             <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/10 text-center text-white text-sm">
-                <p>Copyright &copy; 2026 MIB Education Services | Powered by MIB Education Services</p>
+                <p>Copyright &copy; 2026 MIBk Education Services | Powered by MIBk Education Services</p>
             </div>
         </footer>
     );
