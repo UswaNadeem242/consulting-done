@@ -1,5 +1,6 @@
 import React from 'react';
 import { FileText, Package, FileCheck, MonitorPlay, MessageSquare, ArrowUpRight, Star } from 'lucide-react';
+import Link from 'next/link';
 
 const ServicesOffered = () => {
     return (
@@ -34,18 +35,21 @@ const ServicesOffered = () => {
                         </div> */}
 
                         <h2 className="text-black text-4xl text-center lg:text-start lg:text-5xl font-bold">
-                            Comprehensive visa services
+                            Complete Study Abroad Support, From Admission to Visa
+
                         </h2>
-                        <p className='text-axc-gray text-sm text-center lg:text-start w-full  leading-relaxed lg:mb-10  lg:max-w-lg font-medium lg:pt-4 pt-2'>MIB Education Services offers a comprehensive range of services designed to support students at every stage of their study abroad journey, including</p>
+                        <p className='text-axc-gray text-sm text-center lg:text-start w-full  leading-relaxed lg:mb-10  lg:max-w-lg font-medium lg:pt-4 pt-2'>From selecting the right university to preparing for your student visa, MIBK Consultancy provides personalized support at every stage of your study abroad journey.
+                        </p>
                     </div>
                     {/* Service 1: Application assistance */}
                     <div className="bg-[#0e2554] p-8 rounded-xl flex flex-col hover:bg-[#14326e] transition-colors cursor-pointer group">
                         <div className="mb-14 relative w-10 h-10">
                             <FileText size={40} className="text-white group-hover:scale-110 transition-transform origin-bottom-left" strokeWidth={1.5} />
                         </div>
-                        <h3 className="text-white text-lg font-bold mb-3">Application assistance</h3>
+                        <h3 className="text-white text-lg font-bold mb-3">University Admissions Assistance</h3>
                         <p className="text-blue-100 text-sm leading-relaxed opacity-80">
-                            Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but.
+                           Get expert guidance in shortlisting and applying to universities that match your academic profile, goals, and budget.
+
                         </p>
                     </div>
 
@@ -54,9 +58,10 @@ const ServicesOffered = () => {
                         <div className="mb-14 relative w-10 h-10">
                             <Package size={40} className="text-white group-hover:scale-110 transition-transform origin-bottom-left" strokeWidth={1.5} />
                         </div>
-                        <h3 className="text-white text-lg font-bold mb-3">Visa guidance</h3>
+                        <h3 className="text-white text-lg font-bold mb-3">Course & Career Counseling</h3>
                         <p className="text-blue-100 text-sm leading-relaxed opacity-80">
-                            Time upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but.
+                            Choose a course and career direction that aligns with your strengths, academic background, and future ambitions.
+
                         </p>
                     </div>
 
@@ -68,9 +73,10 @@ const ServicesOffered = () => {
                                 <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
                             </div>
                         </div>
-                        <h3 className="text-white text-lg font-bold mb-3">Document preparation</h3>
+                        <h3 className="text-white text-lg font-bold mb-3">Student Visa Guidance</h3>
                         <p className="text-blue-100 text-sm leading-relaxed opacity-80">
-                            Expert upon yet way get cold spot its week. Almost do am or limits resolve parties but.
+                           Receive step-by-step guidance through the UK and USA student visa process, from documentation to application submission.
+
                         </p>
                     </div>
 
@@ -82,9 +88,10 @@ const ServicesOffered = () => {
                                 <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" /></svg>
                             </div>
                         </div>
-                        <h3 className="text-white text-lg font-bold mb-3">Visa Tracking</h3>
+                        <h3 className="text-white text-lg font-bold mb-3">Scholarship & Funding Assistance</h3>
                         <p className="text-blue-100 text-sm leading-relaxed opacity-80">
-                            Ticket upon yet way get cold spot its week. Almost do am or limits heart is parties.
+                           Identify suitable scholarship and funding opportunities and get support with the application process.
+
                         </p>
                     </div>
 
@@ -96,10 +103,10 @@ const ServicesOffered = () => {
                                 EN
                             </div>
                         </div>
-                        <h3 className="text-white text-lg font-bold mb-3">Language Proficiency</h3>
+                        <h3 className="text-white text-lg font-bold mb-3">Statement of Purpose Writing</h3>
                         <p className="text-blue-100 text-sm leading-relaxed opacity-80">
-                            Ticket upon yet way get cold spot its week. Almost do am or limits heart is parties.
-                        </p>
+                           Get personalized SOP support designed to present your genuine academic journey, goals, and story clearly.
+                     </p>
                     </div>
 
                     {/* 60+ Stats Block */}
@@ -107,10 +114,10 @@ const ServicesOffered = () => {
                         <h3 className="text-consult-sky text-6xl font-bold mb-1">60+</h3>
                         <p className="text-consult-blue text-[15px] font-semibold mb-8">Types of service</p>
 
-                        <a href="#" className="flex items-center justify-between text-consult-sky text-[11px] font-bold tracking-widest pb-3 border-b border-consult-blue/50 hover:border-consult-blue transition-colors group">
+                        <Link href="/contact" className="flex items-center justify-between text-consult-sky text-[11px] font-bold tracking-widest pb-3 border-b border-consult-blue/50 hover:border-consult-blue transition-colors group">
                             <span>VIEW ALL SERVICES</span>
                             <ArrowUpRight size={16} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-                        </a>
+                        </Link>
                     </div>
 
                 </div>

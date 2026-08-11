@@ -21,7 +21,7 @@ const HeroSection = () => {
             </div>
 
             {/* Background decorative elements */}
-            <div className="absolute top-[37%] right-[10%] w-[100px] h-[100px] bg-gray-100 rounded-full z-0 opacity-80 lg:block hidden"  />
+            <div className="absolute top-[37%] right-[10%] w-[100px] h-[100px] bg-gray-100 rounded-full z-0 opacity-80 lg:block hidden" />
             <div className="absolute -bottom-48 -right-40 w-[450px] h-[450px] border-[30px] border-gray-50 rounded-full z-0 flex items-center justify-center opacity-80">
                 <div className="w-full h-px bg-consult-sky absolute" />
                 <div className="w-px h-full bg-consult-sky absolute" />
@@ -35,20 +35,24 @@ const HeroSection = () => {
                 <div className="w-full lg:w-[55%] xl:w-[50%] flex flex-col items-start pt-10 lg:pt-0 z-20">
 
                     <p className=" text-xs sm:text-sm font-medium tracking-widest capitalize mb-4 text-consult-blue">
-                        <span className="text-black font-bold">Welcome!</span> Start growing your business today
+                        <span className="text-black font-bold">Welcome!</span> Start growing
                     </p>
 
                     <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-[4rem] font-bold text-black leading-[1.1] tracking-tight mb-6 relative z-10 ">
-                        Innovative <span className="italic font-semibold text-consult-sky">Solutions</span> Tailored for Your Success
+                        Study in the <span className="italic font-semibold text-consult-sky">UK & USA</span>  with Expert Education Guidance
+
+
+
+
                     </h1>
 
                     <p className="text-axc-gray text-sm  mb-8 max-w-lg leading-relaxed font-medium">
-                        Porttitor ornare fermentum aliquam pharetra facilisis gravida risus suscipit Dui feugiat fusce conubia ridiculus tristique parturient
+                        MIBK Consultancy helps students from Pakistan make confident decisions about university admissions, courses, scholarships, and student visa applications for the UK and USA.
                     </p>
 
                     {/* Note: Kept the Button import, adjust props if they differ in your project */}
                     <Button className='px-8 py-3.5   text-white text-sm font-medium rounded-md shadow-lg transition-all' variant='primary' href='/contact'>
-                        Get Consultant
+                       Book a Free Consultation
                     </Button>
                 </div>
 

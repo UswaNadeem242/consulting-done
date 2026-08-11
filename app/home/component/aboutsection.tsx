@@ -16,7 +16,7 @@ const AboutSection = () => {
                         <div className="text-left lg:col-span-2 flex flex-col justify-start pt-4 pr-10 mb-8 lg:mb-0">
                             <div className="flex items-left justify-left gap-2 mb-4">
                                 <p className="text-black text-xs font-bold tracking-widest uppercase flex items-center gap-2">
-                                    ABOUT
+                                    ABOUT MIBK CONSULTANCY
                                 </p>
                             </div>
                             {/* Star with lines */}
@@ -27,15 +27,15 @@ const AboutSection = () => {
                             </div> */}
 
                             <h2 className="text-black text-3xl sm:text-4xl lg:text-5xl font-bold max-w-md lg:max-w-2xl">
-                                Smart and effective business agency.
+                                Personalized Guidance for Your Study Abroad Journey
+
                             </h2>
                         </div>
 
 
                         {/* Description */}
                         <p className="text-axc-gray text-sm  leading-relaxed mb-10 max-w-lg font-medium lg:pt-4 pt-2">
-                            we believe in the power of collaboration and personalized solutions. By understanding our clients' unique needs and goals, we tailor our approach to deliver strategic insights, creative solutions.
-                        </p>
+                            MIBK Consultancy is a trusted student consultancy dedicated to helping students achieve their academic goals. From choosing the right course and university to preparing for your student visa, we provide personalized guidance throughout your journey to studying abroad.                        </p>
 
                         {/* Contact Info & Signature */}
                         <div className="flex flex-col gap-6 mb-12 w-full">
@@ -49,9 +49,9 @@ const AboutSection = () => {
                                     <span className="text-axc-gray text-sm font-medium mb-0.5">Call us anytime</span>
                                     <span className="text-consult-blue text-lg font-bold tracking-wide">+44 7721 575886</span>
                                 </div>
-                                 
+
                             </div>
-                                <div className="flex items-center gap-4">
+                            <div className="flex items-center gap-4">
                                 <div className="w-14 h-14 bg-consult-blue rounded-full flex items-center justify-center text-white shrink-0 shadow-lg">
                                     <ShieldCheck size={22} strokeWidth={1.5} />
                                 </div>
@@ -59,7 +59,7 @@ const AboutSection = () => {
                                     <span className="text-axc-gray text-sm font-medium mb-0.5">Authentication Code</span>
                                     <span className="text-consult-blue text-lg font-bold tracking-wide">WPFLDWZHPQQRYSFE</span>
                                 </div>
-                                 
+
                             </div>
 
                             {/* Signature Placeholder */}
@@ -72,7 +72,7 @@ const AboutSection = () => {
 
                         {/* Button */}
                         <Button className="px-8 py-4  text-white text-sm font-semibold rounded-md shadow-xl hover:-translate-y-1 transition-all duration-300" variant='primary' href='/about'>
-                            About Us
+                           Learn More About Us
                         </Button>
 
                     </div>

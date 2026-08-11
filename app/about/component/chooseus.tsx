@@ -32,7 +32,7 @@ export default function ChooseUs() {
                         {/* Heading Label */}
                         <div className="flex items-center justify-center lg:justify-start gap-2 mb-4 w-full">
                             <p className="text-white text-xs font-bold tracking-widest uppercase flex items-center gap-2">
-                                Why choose us
+                               WHY CHOOSE MIBK
                             </p>
                         </div>
 
@@ -45,7 +45,8 @@ export default function ChooseUs() {
 
                         {/* Title */}
                         <h2 className="text-white text-4xl lg:text-5xl font-bold lg:mb-14 mb-0 max-w-md lg:max-w-2xl">
-                            Why choosing our consulting is the best.
+                          Why Students Choose MIBK Consultancy
+
                         </h2>
                     </div>
 

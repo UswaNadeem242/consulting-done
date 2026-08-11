@@ -32,7 +32,8 @@ function WorkSection() {
                     </div>
 
                     <h2 className="text-white text-4xl lg:text-5xl font-bold">
-                        Easy 3 Steps To Work
+                       Your Journey to Studying Abroad, Made Simple
+
                     </h2>
                 </div>
 

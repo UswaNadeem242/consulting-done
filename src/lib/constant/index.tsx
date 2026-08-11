@@ -1,4 +1,4 @@
-import { Search, PenTool, Smartphone, Upload, Send, House, Layout } from 'lucide-react';
+import { Search, PenTool, Smartphone, Upload, Send, House, Layout, LineSquiggle } from 'lucide-react';
 import img1 from "@/public/images/babar.jpeg"
 import img3 from "@/public/images/abdullah.jpeg"
 export type NavLink = {
@@ -74,12 +74,14 @@ export const DESTINATION = [
     title: "UK\nCoaching",
     image1: "https://images.unsplash.com/photo-1621274790572-7c32596bc67f?q=80&w=327&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     image2: "https://images.unsplash.com/photo-1454793147212-9e7e57e89a4f?q=80&w=364&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    desc: 'Get support with undergraduate and postgraduate admissions, Master\'s and PhD applications, scholarships, funding, visa preparation, and interview guidance.'
   },
   {
     id: 2,
     title: "USA\nCoaching",
     image1: "https://images.unsplash.com/photo-1623945194105-cd36c4433390?q=80&w=493&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     image2: "https://images.unsplash.com/photo-1576606970009-7ddc4229ced7?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    desc: 'Receive guidance for university admissions, PhD applications, research proposals, scholarships, funding opportunities, and visa and interview preparation.'
   }
 ];
 
@@ -127,20 +129,20 @@ export const FOOTER_LINK = [
 
 export const POINTS = [
   {
-    title: "Personalized Counseling",
-    description: "We understand that every student has unique aspirations and challenges, which is why we offer tailored solutions that fit individual needs."
+    title: "British Council Certified",
+    description: "Trusted. Certified. Reliable."
   },
   {
-    title: "Comprehensive Support",
-    description: "From initial consultation to post-arrival services, we are with you every step of the way."
+    title: "End-to-End Support",
+    description: "From course selection to visa preparation, we support you throughout your journey."
   },
   {
-    title: "Global Reach",
-    description: "We work with universities across multiple countries, ensuring a wide range of options for students."
+    title: "Personalized Guidance",
+    description: "Our recommendations are built around your academic profile, goals, and circumstances — not a generic template."
   },
   {
-    title: "Proven Success Rate",
-    description: "Our track record of successful student placements and satisfied clients speaks for itself."
+    title: "UK & USA Specialists",
+    description: "Our focused destination expertise helps students navigate two of the world's leading study destinations."
   }
 ];
 
@@ -148,17 +150,46 @@ export const POINTS = [
 export const cardsData = [
   {
     icon: <PenTool size={28} strokeWidth={1.5} />,
-    title: "Find Course",
-    description: "Unsure about the best universities and courses for you? Use our AI-powered University Course Finder to find exactly what you need, saving you months of research"
+    title: "Free Consultation",
+    description: "We start by understanding your academic background, goals, budget, and study plans."
+  },
+  {
+    icon: <LineSquiggle size={28} strokeWidth={1.5} />,
+    title: "Personalized Roadmap",
+    description: "We help you build a shortlist of well-matched universities and a realistic application timeline."
   },
   {
     icon: <Layout size={28} strokeWidth={1.5} />,
-    title: "Admission Updates",
-    description: "Stay informed with instant updates on your applications. Effortlessly monitor your application progress and receive timely updates and offers"
+    title: "Application Support",
+    description: "We guide you through university applications, SOP preparation, and scholarship applications"
   },
   {
     icon: <Send size={28} strokeWidth={1.5} />,
-    title: "Scholarship abroad",
-    description: "Explore our extensive database of over 3,700 scholarships offered by universities, governments, and organizations. Discover fully funded, merit-based, sports..."
+    title: "Visa & Departure",
+    description: "We help you prepare for your visa interview and get ready for a smooth start to your study abroad journey."
   }
+];
+
+export const FAQ_DATA = [
+  {
+    id: 1,
+    question: "Do I need to know exactly which university I want before contacting you?",
+    answer: " Not at all. Many students start with just a field of interest or a budget in mind — we help you narrow down the right universities and countries from there."
+  },
+  {
+    id: 2,
+    question: "Do you only work with UK and USA applicants? ",
+    answer: " Yes, and that's by design. Focusing on two destinations means our guidance stays deep and current, rather than spread thin across dozens of countries."
+  },
+  {
+    id: 3,
+    question: "Can you help with PhD and research-based applications?",
+    answer: "Yes — we support PhD applicants through research proposal development, supervisor matching guidance, and the full doctoral application process."
+  },
+  {
+    id: 4,
+    question: "Is the first consultation really free?",
+    answer: " Yes. We start every relationship with a no-obligation consultation to understand your goals before recommending any paid support."
+  },
+  
 ];

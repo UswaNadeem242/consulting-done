@@ -15,7 +15,7 @@ const CountriesOffer = () => {
                 <div className="text-center mb-16 flex flex-col items-center">
                     <div className="flex items-center justify-center gap-2 mb-4">
                         <p className="text-black text-xs font-bold tracking-widest uppercase flex items-center gap-2">
-                            Countries We Offer
+                           STUDY DESTINATIONS
                         </p>
                     </div>
                     {/* Star with lines */}
@@ -26,7 +26,8 @@ const CountriesOffer = () => {
                     </div>
 
                     <h2 className="text-black text-4xl lg:text-5xl font-bold">
-                        Best Countries for Education
+                   Study in the UK or USA with the Right Guidance
+
                     </h2>
                 </div>
 
@@ -51,7 +52,7 @@ const CountriesOffer = () => {
 
                             {/* Overlay Content Box */}
                             <div
-                                className="absolute bottom-8 left-0 bg-consult-blue w-[47%] group-hover:w-full transition-all duration-300 ease-in-out py-6 px-8"
+                                className="absolute bottom-8 left-0 bg-consult-blue w-[47%] group-hover:w-full transition-all duration-500 ease-in-out py-6 px-8 flex flex-col justify-center"
                             >
                                 {/* Circular Arrow Button */}
                                 <div className="absolute -top-6 right-6 w-12 h-12 bg-white rounded-full flex items-center justify-center text-consult-blue shadow-lg transition-transform duration-300 group-hover:scale-110">
@@ -59,9 +60,19 @@ const CountriesOffer = () => {
                                 </div>
 
                                 {/* Title */}
-                                <h3 className="text-white text-2xl lg:text-3xl font-bold leading-[1.2] whitespace-pre-line">
+                                <h3 className="text-white text-2xl lg:text-3xl font-bold leading-[1.2] whitespace-pre-line group-hover:-translate-y-1 transition-transform duration-500">
                                     {item.title}
                                 </h3>
+                                
+                                {/* Hover Text */}
+                                <div className="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100">
+                                    <div className="overflow-hidden mt-2 lg:mt-3">
+                                        <p className="text-blue-100/90 text-sm lg:text-base leading-relaxed pr-8">
+                                         {item?.desc}
+
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     ))}

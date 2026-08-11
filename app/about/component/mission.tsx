@@ -14,14 +14,23 @@ export default function MissionSection() {
                         Our Expertise
                     </h2>
                     <p className="text-axc-gray leading-relaxed lg:text-base text-sm font-normal lg:text-start text-center">
-                        With years of experience in the international education sector, MIB Education Services has a strong reputation for delivering quality services tailored to the unique needs of each student. Our team of expert consultants comprises seasoned professionals with in-depth knowledge of the education systems in the UK, Australia, Canada, USA, Malaysia, and Europe, ensuring that our clients receive accurate, relevant, and up-to-date information
+                        MIBK Consultancy is a trusted student consultancy dedicated to guiding students toward academic success.
+                        From choosing the right course to securing your visa, we support you at every step of your journey to
+                        studying abroad — with the credibility of British Council certification behind every recommendation we
+                        make.
+                    </p>
+                    <p className="text-axc-gray leading-relaxed lg:text-base text-sm font-normal lg:text-start text-center lg:mt-6 mt-3">
+                        We specialize in the UK and USA, covering everything from undergraduate admissions to PhD applications, so
+                        our guidance is deep, current, and genuinely tailored — not generic. Every student who works with us starts
+                        with a one-on-one consultation to understand their academic background, goals, and constraints, so the plan
+                        we build is built around you, not a template.
                     </p>
                 </div>
 
                 {/* Image Content */}
                 <div className="relative w-full max-w-[350px] lg:max-w-[500px] aspect-square rounded-full overflow-hidden shadow-xl mx-auto lg:ml-auto">
                     <Image
-                        src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1471&auto=format&fit=crop"
+                        src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?Dq=80&w=1471&auto=format&fit=crop"
                         alt="Consultant"
                         fill
                         className="object-cover object-center"
