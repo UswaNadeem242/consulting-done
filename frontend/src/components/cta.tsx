@@ -1,4 +1,5 @@
 import { Button } from '@/ui/button';
+import Link from 'next/link';
 import React from 'react';
 
 export default function CTASection() {
@@ -14,9 +15,11 @@ export default function CTASection() {
           </p>
         </div>
         <div className="flex justify-center mt-5 ">
+          <Link href="/contact">
           <Button variant='primary' className='text-white font-medium py-3 px-8 rounded whitespace-nowrap'>
           Book a Free Consultation
           </Button>
+          </Link>
 
         </div>
       </div>

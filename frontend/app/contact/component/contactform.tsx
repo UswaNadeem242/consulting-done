@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { MapPin, Mail, Phone, MessageCircle } from 'lucide-react';
 
 export default function ContactFormSection() {
+
     const [formData, setFormData] = useState({ name: '', email: '', message: '' });
     const [errors, setErrors] = useState({ name: '', email: '', message: '' });
 
@@ -10,37 +11,79 @@ export default function ContactFormSection() {
         return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
-        let newErrors = { name: '', email: '', message: '' };
-        let isValid = true;
+    const [loading, setLoading] = useState(false);
+    const [success, setSuccess] = useState("");
+    const [error, setError] = useState("");
 
-        if (!formData.name.trim()) {
-            newErrors.name = 'Name is required';
-            isValid = false;
-        }
+    // const handleSubmit = async (e: React.FormEvent) => {
+    //     e.preventDefault();
+    //     let newErrors = { name: '', email: '', message: '' };
+    //     let isValid = true;
 
-        if (!formData.email.trim()) {
-            newErrors.email = 'Email is required';
-            isValid = false;
-        } else if (!validateEmail(formData.email)) {
-            newErrors.email = 'Please enter a valid email';
-            isValid = false;
-        }
+    //     if (!formData.name.trim()) {
+    //         newErrors.name = 'Name is required';
+    //         isValid = false;
+    //     }
 
-        if (!formData.message.trim()) {
-            newErrors.message = 'Message is required';
-            isValid = false;
-        }
+    //     if (!formData.email.trim()) {
+    //         newErrors.email = 'Email is required';
+    //         isValid = false;
+    //     } else if (!validateEmail(formData.email)) {
+    //         newErrors.email = 'Please enter a valid email';
+    //         isValid = false;
+    //     }
 
-        setErrors(newErrors);
+    //     if (!formData.message.trim()) {
+    //         newErrors.message = 'Message is required';
+    //         isValid = false;
+    //     }
 
-        if (isValid) {
-            // Proceed with form submission logic
-            alert('Form submitted successfully!');
-            setFormData({ name: '', email: '', message: '' });
-        }
-    };
+    //     setErrors(newErrors);
+
+    //     if (isValid) {
+    //         setLoading(true);
+    //         setSuccess("");
+    //         setError("");
+
+    //         const data = {
+    //             name: formData.name,
+    //             email: formData.email,
+    //             message: formData.message,
+    //         };
+    //         console.log("Sending data:", data);
+
+    //         try {
+    //             const response = await fetch(
+    //                 "http://localhost:5000/api/contact",
+    //                 {
+    //                     method: "POST",
+    //                     headers: {
+    //                         "Content-Type": "application/json",
+    //                     },
+    //                     body: JSON.stringify(data),
+    //                 }
+    //             );
+
+    //             const result = await response.json();
+
+    //             if (!response.ok) {
+    //                 throw new Error(result.message);
+    //             }
+
+    //             setSuccess("Your message has been sent successfully!");
+    //             alert('Your message has been sent successfully!');
+    //             setFormData({ name: '', email: '', message: '' });
+
+    //         } catch (err) {
+    //             console.error(err);
+    //             setError(
+    //                 "Something went wrong. Please try again."
+    //             );
+    //          } finally {
+    //             setLoading(false);
+    //         }
+    //     }
+    // };
 
     return (
         <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto ">
@@ -55,7 +98,7 @@ export default function ContactFormSection() {
                     <div className="flex flex-col md:flex-row bg-white shadow-[0_4px_20px_rgba(0,0,0,0.05)] rounded-lg overflow-hidden">
                         {/* Form Side */}
                         <div className="w-full md:w-1/2 p-6 md:p-8">
-                            <form onSubmit={handleSubmit} className="space-y-5">
+                            <form   className="space-y-5">
                                 <div>
                                     <input
                                         type="text"
@@ -88,12 +131,18 @@ export default function ContactFormSection() {
                                     />
                                     {errors.message && <p className="text-red-500 text-xs mt-1.5 ml-1">{errors.message}</p>}
                                 </div>
-
+                                {success && (
+                                    <div className="text-green-600 text-sm">{success}</div>
+                                )}
+                                {error && (
+                                    <div className="text-red-600 text-sm">{error}</div>
+                                )}
                                 <button
                                     type="submit"
+                                    disabled={loading}
                                     className="bg-consult-blue text-white px-8 py-3.5 rounded hover:bg-[#4d61ca] transition-colors font-medium tracking-wide mt-2"
                                 >
-                                    SUBMIT
+                                    {loading ? "SENDING..." : "SUBMIT"}
                                 </button>
                             </form>
                         </div>
@@ -139,7 +188,7 @@ export default function ContactFormSection() {
                         <div className="flex items-center gap-4">
                             <Phone className="text-consult-blue w-5 h-5 shrink-0" />
                             <a href="tel:44 7721 575886" className="text-axc-gray text-sm hover:text-consult-blue transition-colors">
-                            +44 7721 575886
+                                +44 7721 575886
                             </a>
                         </div>
 
