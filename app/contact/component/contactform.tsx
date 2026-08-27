@@ -1,6 +1,8 @@
 'use client';
 import React, { useState } from 'react';
 import { MapPin, Mail, Phone, MessageCircle } from 'lucide-react';
+import { supabase } from "../../../lib/supabase";
+import { ToastContainer, toast } from 'react-toastify';
 
 export default function ContactFormSection() {
 
@@ -84,7 +86,58 @@ export default function ContactFormSection() {
     //         }
     //     }
     // };
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        setLoading(true);
 
+        const form = e.currentTarget;
+        const formData = new FormData(form);
+
+        const data = {
+            name: formData.get("name")?.toString().trim(),
+            email: formData.get("email")?.toString().trim(),
+            message: formData.get("message")?.toString().trim(),
+        };
+
+        if (!data.name || !data.email || !data.message) {
+            toast.error("Please fill in your name, email and message.");
+            setLoading(false);
+            return;
+        }
+
+        try {
+            // 1. Send Email Notification via Resend (/api/contact)
+            const res = await fetch("/api/contact", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(data),
+            });
+
+            const resData = await res.json().catch(() => ({}));
+
+            if (!res.ok) {
+                throw new Error(resData?.error || "Failed to send email.");
+            }
+
+            // 2. Save submission to Supabase Database (contact_form table)
+            try {
+                if (supabase) {
+                    await supabase.from("contact_form").insert([data]);
+                }
+            } catch (dbErr) {
+                console.warn("Supabase insert warning:", dbErr);
+            }
+
+            toast.success("Your message has been sent successfully!");
+            form.reset();
+
+        } catch (error: any) {
+            console.error("Contact Form Error:", error);
+            toast.error(error?.message || "Failed to send message. Please try again.");
+        } finally {
+            setLoading(false);
+        }
+    };
     return (
         <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto ">
             <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-12 lg:gap-16">
@@ -98,7 +151,7 @@ export default function ContactFormSection() {
                     <div className="flex flex-col md:flex-row bg-white shadow-[0_4px_20px_rgba(0,0,0,0.05)] rounded-lg overflow-hidden">
                         {/* Form Side */}
                         <div className="w-full md:w-1/2 p-6 md:p-8">
-                            <form   className="space-y-5">
+                            <form className="space-y-5" onSubmit={handleSubmit}>
                                 <div>
                                     <input
                                         type="text"
