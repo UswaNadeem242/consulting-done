@@ -265,7 +265,7 @@
 
 import React, { useState } from "react";
 import { MapPin, Mail, Phone, MessageCircle } from "lucide-react";
-import { supabase } from "../../../lib/supabase";
+import { supabase } from "../../../src/lib/supabase";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
