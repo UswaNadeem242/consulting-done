@@ -260,7 +260,7 @@
 
 
 
- 
+
 "use client";
 
 import React, { useState } from "react";
@@ -288,6 +288,129 @@ export default function ContactFormSection() {
         return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
     };
 
+    // const handleSubmit = async (
+    //     e: React.FormEvent<HTMLFormElement>
+    // ) => {
+    //     e.preventDefault();
+
+    //     const newErrors = {
+    //         name: "",
+    //         email: "",
+    //         message: "",
+    //     };
+
+    //     let isValid = true;
+
+    //     // Name validation
+    //     if (!formData.name.trim()) {
+    //         newErrors.name = "Name is required";
+    //         isValid = false;
+    //     }
+
+    //     // Email validation
+    //     if (!formData.email.trim()) {
+    //         newErrors.email = "Email is required";
+    //         isValid = false;
+    //     } else if (!validateEmail(formData.email.trim())) {
+    //         newErrors.email = "Please enter a valid email";
+    //         isValid = false;
+    //     }
+
+    //     // Message validation
+    //     if (!formData.message.trim()) {
+    //         newErrors.message = "Message is required";
+    //         isValid = false;
+    //     }
+
+    //     setErrors(newErrors);
+
+    //     if (!isValid) {
+    //         return;
+    //     }
+
+    //     setLoading(true);
+
+    //     const data = {
+    //         name: formData.name.trim(),
+    //         email: formData.email.trim(),
+    //         message: formData.message.trim(),
+    //     };
+
+    //     try {
+    //         // Send email through Next.js API route
+    //         const response = await fetch("/api/contact", {
+    //             method: "POST",
+    //             headers: {
+    //                 "Content-Type": "application/json",
+    //             },
+    //             body: JSON.stringify(data),
+    //         });
+
+    //         const result = await response.json().catch(() => ({}));
+
+    //         if (!response.ok) {
+    //             throw new Error(
+    //                 result?.error || "Failed to send email."
+    //             );
+    //         }
+
+    //         // Save submission to Supabase
+    //         try {
+    //             if (supabase) {
+    //                 const { error: dbError } = await supabase
+    //                     .from("mibk_contact_form")
+    //                     .insert([
+    //                         {
+    //                             name: data.name,
+    //                             email: data.email,
+    //                             message: data.message,
+    //                         },
+    //                     ]);
+
+    //                 if (dbError) {
+    //                     console.warn(
+    //                         "Supabase insert warning:",
+    //                         dbError
+    //                     );
+    //                 }
+    //             }
+    //         } catch (dbError) {
+    //             console.warn(
+    //                 "Supabase insert warning:",
+    //                 dbError
+    //             );
+    //         }
+
+    //         // Success
+    //         toast.success(
+    //             "Your message has been sent successfully!"
+    //         );
+
+    //         setFormData({
+    //             name: "",
+    //             email: "",
+    //             message: "",
+    //         });
+
+    //         setErrors({
+    //             name: "",
+    //             email: "",
+    //             message: "",
+    //         });
+    //     } catch (error) {
+    //         console.error("Contact Form Error:", error);
+
+    //         toast.error(
+    //             error instanceof Error
+    //                 ? error.message
+    //                 : "Failed to send message. Please try again."
+    //         );
+    //     } finally {
+    //         setLoading(false);
+    //     }
+    // };
+
+
     const handleSubmit = async (
         e: React.FormEvent<HTMLFormElement>
     ) => {
@@ -301,13 +424,11 @@ export default function ContactFormSection() {
 
         let isValid = true;
 
-        // Name validation
         if (!formData.name.trim()) {
             newErrors.name = "Name is required";
             isValid = false;
         }
 
-        // Email validation
         if (!formData.email.trim()) {
             newErrors.email = "Email is required";
             isValid = false;
@@ -316,7 +437,6 @@ export default function ContactFormSection() {
             isValid = false;
         }
 
-        // Message validation
         if (!formData.message.trim()) {
             newErrors.message = "Message is required";
             isValid = false;
@@ -337,7 +457,6 @@ export default function ContactFormSection() {
         };
 
         try {
-            // Send email through Next.js API route
             const response = await fetch("/api/contact", {
                 method: "POST",
                 headers: {
@@ -350,38 +469,11 @@ export default function ContactFormSection() {
 
             if (!response.ok) {
                 throw new Error(
-                    result?.error || "Failed to send email."
+                    result?.error ||
+                    "Failed to send message."
                 );
             }
 
-            // Save submission to Supabase
-            try {
-                if (supabase) {
-                    const { error: dbError } = await supabase
-                        .from("mibk_contact_form")
-                        .insert([
-                            {
-                                name: data.name,
-                                email: data.email,
-                                message: data.message,
-                            },
-                        ]);
-
-                    if (dbError) {
-                        console.warn(
-                            "Supabase insert warning:",
-                            dbError
-                        );
-                    }
-                }
-            } catch (dbError) {
-                console.warn(
-                    "Supabase insert warning:",
-                    dbError
-                );
-            }
-
-            // Success
             toast.success(
                 "Your message has been sent successfully!"
             );
@@ -398,7 +490,10 @@ export default function ContactFormSection() {
                 message: "",
             });
         } catch (error) {
-            console.error("Contact Form Error:", error);
+            console.error(
+                "Contact Form Error:",
+                error
+            );
 
             toast.error(
                 error instanceof Error
@@ -409,7 +504,6 @@ export default function ContactFormSection() {
             setLoading(false);
         }
     };
-
     return (
         <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
             <ToastContainer position="top-right" autoClose={4000} />
@@ -439,11 +533,10 @@ export default function ContactFormSection() {
                                         placeholder="Your name*"
                                         value={formData.name}
                                         disabled={loading}
-                                        className={`w-full border p-3.5 rounded focus:outline-none focus:ring-1 focus:ring-consbg-consult-blue transition-colors ${
-                                            errors.name
+                                        className={`w-full border p-3.5 rounded focus:outline-none focus:ring-1 focus:ring-consbg-consult-blue transition-colors ${errors.name
                                                 ? "border-red-500"
                                                 : "border-gray-200"
-                                        }`}
+                                            }`}
                                         onChange={(e) => {
                                             setFormData({
                                                 ...formData,
@@ -471,11 +564,10 @@ export default function ContactFormSection() {
                                         placeholder="Your email*"
                                         value={formData.email}
                                         disabled={loading}
-                                        className={`w-full border p-3.5 rounded focus:outline-none focus:ring-1 focus:ring-consbg-consult-blue transition-colors ${
-                                            errors.email
+                                        className={`w-full border p-3.5 rounded focus:outline-none focus:ring-1 focus:ring-consbg-consult-blue transition-colors ${errors.email
                                                 ? "border-red-500"
                                                 : "border-gray-200"
-                                        }`}
+                                            }`}
                                         onChange={(e) => {
                                             setFormData({
                                                 ...formData,
@@ -503,11 +595,10 @@ export default function ContactFormSection() {
                                         rows={4}
                                         value={formData.message}
                                         disabled={loading}
-                                        className={`w-full border p-3.5 rounded focus:outline-none focus:ring-1 focus:ring-consbg-consult-blue transition-colors resize-none ${
-                                            errors.message
+                                        className={`w-full border p-3.5 rounded focus:outline-none focus:ring-1 focus:ring-consbg-consult-blue transition-colors resize-none ${errors.message
                                                 ? "border-red-500"
                                                 : "border-gray-200"
-                                        }`}
+                                            }`}
                                         onChange={(e) => {
                                             setFormData({
                                                 ...formData,
