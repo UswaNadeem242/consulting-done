@@ -66,7 +66,7 @@ const Leadership = () => {
 
                 <div className="w-full h-px bg-gray-100 mb-4"></div>
 
-                <div className="flex items-center justify-center gap-2">
+                {/* <div className="flex items-center justify-center gap-2">
                   <Link href="#" className="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center text-consult-blue hover:text-white transition-colors">
                     <LinkdeinSvgIcon size={14} fill="currentColor" strokeWidth={0} />
                   </Link>
@@ -76,7 +76,7 @@ const Leadership = () => {
                   <Link href="#" className="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center text-consult-blue hover:text-white transition-colors">
                     <InstagramSvgIcon size={14} />
                   </Link>
-                </div>
+                </div> */}
               </div>
             </div>
           ))}

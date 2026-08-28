@@ -94,8 +94,8 @@ export const TEAM_MEMBERS = [
   },
   {
     id: 2,
-    name: "Jane Cooper",
-    role: "Medical Assistant",
+    name: "Maryam Iqbal",
+    role: "Managing Director",
     image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=256&auto=format&fit=crop",
   },
   {
