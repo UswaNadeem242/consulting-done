@@ -167,7 +167,7 @@ export async function POST(req) {
     const { error: resendError } =
       await resend.emails.send({
         from: "MIBK Website <info@mibkconsultancyltd.co.uk>",
-        to: ["info@mibkconsultancyltd.co.uk"],
+        to: ["mibkconsultancyltd@gmail.com"],
         replyTo: email,
         subject: `New Consultation Request from ${name}`,
 
