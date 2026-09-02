@@ -47,12 +47,14 @@ const HeroSection = () => {
                     </h1>
 
                     <p className="text-axc-gray text-sm  mb-8 max-w-lg leading-relaxed font-medium">
-                        MIBK Consultancy helps students from Pakistan make confident decisions about university admissions, courses, scholarships, and student visa applications for the UK and USA.
+                        MIBK Consultancy — Your Trusted Path from Pakistan to World-Class Education.
+                        We guide you through every step of university admissions, course selection, scholarships, and
+                        student visas for the UK and USA — turning your global education dreams into confident decisions.
                     </p>
 
                     {/* Note: Kept the Button import, adjust props if they differ in your project */}
                     <Button className='px-8 py-3.5   text-white text-sm font-medium rounded-md shadow-lg transition-all' variant='primary' href='/contact'>
-                       Book a Free Consultation
+                        Book a Free Consultation
                     </Button>
                 </div>
 

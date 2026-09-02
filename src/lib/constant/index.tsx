@@ -1,6 +1,7 @@
 import { Search, PenTool, Smartphone, Upload, Send, House, Layout, LineSquiggle } from 'lucide-react';
 import img1 from "@/public/images/babar.jpeg"
-import img3 from "@/public/images/abdullah.jpeg"
+import img3 from "@/public/images/abdullah2.png"
+import img2 from "@/public/images/maryam.png"
 export type NavLink = {
   label: string;
   href: string;
@@ -96,7 +97,7 @@ export const TEAM_MEMBERS = [
     id: 2,
     name: "Maryam Iqbal",
     role: "Managing Director",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=256&auto=format&fit=crop",
+    image: img2,
   },
   {
     id: 3,
@@ -191,5 +192,5 @@ export const FAQ_DATA = [
     question: "Is the first consultation really free?",
     answer: " Yes. We start every relationship with a no-obligation consultation to understand your goals before recommending any paid support."
   },
-  
+
 ];

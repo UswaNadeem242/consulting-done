@@ -10,15 +10,14 @@ export default function CTASection() {
           <h2 className="text-black text-2xl sm:text-3xl font-bold mb-4 max-w-xl text-center">
             Ready to Start Your Study Abroad Journey?          </h2>
           <p className="text-gray-500 leading-relaxed text-sm sm:text-base text-center max-w-xl">
-            Take the first step towards your UK or USA study plans. Book a free consultation with MIBK Consultancy and get guidance tailored to your academic goals.
-
-          </p>
+            Your journey abroad starts with one conversation. Book a free consultation with MIBK Consultancy and let us
+            help you plan the path to your dream university.          </p>
         </div>
         <div className="flex justify-center mt-5 ">
           <Link href="/contact">
-          <Button variant='primary' className='text-white font-medium py-3 px-8 rounded whitespace-nowrap'>
-          Book a Free Consultation
-          </Button>
+            <Button variant='primary' className='text-white font-medium py-3 px-8 rounded whitespace-nowrap'>
+              Book a Free Consultation
+            </Button>
           </Link>
 
         </div>

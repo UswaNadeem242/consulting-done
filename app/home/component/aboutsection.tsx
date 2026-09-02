@@ -2,7 +2,8 @@ import React from 'react';
 import { Phone, ShieldCheck, Star } from 'lucide-react';
 import { Button } from '@/ui/button';
 import Image from 'next/image';
-import profile from "@/public/images/profile.png"
+import profile from "@/public/images/cerified.jpeg"
+import about from "@/public/images/about.jpg"
 const AboutSection = () => {
     return (
         <section className="bg-white lg:py-20 lg:px-6 py-8 px-0 overflow-hidden">
@@ -35,7 +36,9 @@ const AboutSection = () => {
 
                         {/* Description */}
                         <p className="text-axc-gray text-sm  leading-relaxed mb-10 max-w-lg font-medium lg:pt-4 pt-2">
-                            MIBK Consultancy is a trusted student consultancy dedicated to helping students achieve their academic goals. From choosing the right course and university to preparing for your student visa, we provide personalized guidance throughout your journey to studying abroad.                        </p>
+                            At MIBK Consultancy, we don't just process applications — we walk beside you. From picking the right course
+                            and university to acing your student visa, our personalized guidance turns your study-abroad dream into a
+                            confident, well-planned journey.                      </p>
 
                         {/* Contact Info & Signature */}
                         <div className="flex flex-col gap-6 mb-12 w-full">
@@ -56,7 +59,7 @@ const AboutSection = () => {
                                     <ShieldCheck size={22} strokeWidth={1.5} />
                                 </div>
                                 <div className="flex flex-col">
-                                    <span className="text-axc-gray text-sm font-medium mb-0.5">Authentication Code</span>
+                                    <span className="text-axc-gray text-sm font-medium mb-0.5">Authentication Code from the Britsih council </span>
                                     <span className="text-consult-blue text-lg font-bold tracking-wide">WPFLDWZHPQQRYSFE</span>
                                 </div>
 
@@ -72,7 +75,7 @@ const AboutSection = () => {
 
                         {/* Button */}
                         <Button className="px-8 py-4  text-white text-sm font-semibold rounded-md shadow-xl hover:-translate-y-1 transition-all duration-300" variant='primary' href='/about'>
-                           Learn More About Us
+                            Learn More About Us
                         </Button>
 
                     </div>
@@ -83,7 +86,7 @@ const AboutSection = () => {
                         {/* Main Circular Image */}
                         <div className="w-[320px] h-[320px] sm:w-[450px] sm:h-[450px] lg:w-[500px] lg:h-[500px] rounded-full overflow-hidden relative shadow-2xl">
                             <Image
-                                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1000&auto=format&fit=crop"
+                                src={about}
                                 alt="Business Team"
                                 width={500}
                                 height={500}
@@ -92,7 +95,7 @@ const AboutSection = () => {
                         </div>
 
                         {/* Progress Widget (Absolute Positioned) */}
-                        <div className="absolute -bottom-8 left-0 sm:left-10 lg:-left-12   rounded-xl p-8 flex flex-col items-center justify-center   z-10 w-72  md:block hidden">
+                        <div className="absolute -bottom-4 -left-4 sm:-bottom-8 sm:left-10 lg:-left-12 rounded-xl p-2 sm:p-8 flex flex-col items-center justify-center z-10 w-48 sm:w-72">
                             {/* Circular Progress Ring */}
                             <Image src={profile} alt="profile" width={900} height={900} className="  object-cover" />
 

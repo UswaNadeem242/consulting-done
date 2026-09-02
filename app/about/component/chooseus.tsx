@@ -72,7 +72,7 @@ export default function ChooseUs() {
                     src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1000&auto=format&fit=crop"
                     alt="Consultant"
                     fill
-                    className="object-cover object-center"
+                    className="object-cover object-top"
                 />
             </div>
 

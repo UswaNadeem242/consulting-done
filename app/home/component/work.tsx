@@ -1,7 +1,8 @@
 import React from 'react';
 import { Star } from 'lucide-react';
 import { cardsData } from '@/src/lib/constant';
-
+import visa from "@/public/images/visa.jpg"
+import Image from 'next/image';
 function WorkSection() {
 
 
@@ -32,7 +33,7 @@ function WorkSection() {
                     </div>
 
                     <h2 className="text-white text-4xl lg:text-5xl font-bold">
-                       Your Journey to Studying Abroad, Made Simple
+                        Your Journey to Studying Abroad, Made Simple
 
                     </h2>
                 </div>
@@ -75,10 +76,12 @@ function WorkSection() {
                     {/* Right side: Circular Image */}
                     <div className="w-full lg:w-[45%] flex justify-center items-center mt-10 lg:mt-0">
                         <div className="relative w-[320px] h-[320px] sm:w-[450px] sm:h-[450px] lg:w-[500px] lg:h-[500px] rounded-full overflow-hidden shadow-2xl">
-                            <img
-                                src="https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=1000&auto=format&fit=crop"
+                            <Image
+                                width={500}
+                                height={500}
+                                src={visa}
                                 alt="Working Process"
-                                className="w-full h-full object-cover object-center"
+                                className="w-full h-full object-cover object-top"
                             />
                         </div>
                     </div>

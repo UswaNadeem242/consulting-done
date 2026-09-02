@@ -16,10 +16,8 @@ export default function Footer() {
                     <Image src={logo} alt="logo" width={150} height={100} />
                     {/* <h3 className="text-white font-bold text-lg mb-6 tracking-wide">Logo</h3> */}
                     <p className="text-white text-sm leading-relaxed mb-6 max-w-[250px] mt-2">
-                        MIBK Consultancy helps students from Pakistan pursue
-                        their study goals in the UK and USA with personalized
-                        guidance for university admissions, scholarships, and
-                        student visa applications.
+                         MIBK Consultancy is Pakistan's trusted partner for studying abroad, offering personalized guidance on
+                        university admissions, scholarships, and student visas for the UK and USA.
                     </p>
                     <div className="flex items-center gap-4 text-white">
                         <Link href="#" aria-label="Facebook" className="hover:text-axc-gray transition-colors">

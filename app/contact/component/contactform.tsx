@@ -534,8 +534,8 @@ export default function ContactFormSection() {
                                         value={formData.name}
                                         disabled={loading}
                                         className={`w-full border p-3.5 rounded focus:outline-none focus:ring-1 focus:ring-consbg-consult-blue transition-colors ${errors.name
-                                                ? "border-red-500"
-                                                : "border-gray-200"
+                                            ? "border-red-500"
+                                            : "border-gray-200"
                                             }`}
                                         onChange={(e) => {
                                             setFormData({
@@ -565,8 +565,8 @@ export default function ContactFormSection() {
                                         value={formData.email}
                                         disabled={loading}
                                         className={`w-full border p-3.5 rounded focus:outline-none focus:ring-1 focus:ring-consbg-consult-blue transition-colors ${errors.email
-                                                ? "border-red-500"
-                                                : "border-gray-200"
+                                            ? "border-red-500"
+                                            : "border-gray-200"
                                             }`}
                                         onChange={(e) => {
                                             setFormData({
@@ -596,8 +596,8 @@ export default function ContactFormSection() {
                                         value={formData.message}
                                         disabled={loading}
                                         className={`w-full border p-3.5 rounded focus:outline-none focus:ring-1 focus:ring-consbg-consult-blue transition-colors resize-none ${errors.message
-                                                ? "border-red-500"
-                                                : "border-gray-200"
+                                            ? "border-red-500"
+                                            : "border-gray-200"
                                             }`}
                                         onChange={(e) => {
                                             setFormData({
@@ -664,7 +664,8 @@ export default function ContactFormSection() {
                                 href="mailto:info@mibkconsultancyltd.co.uk"
                                 className="text-axc-gray text-sm hover:text-consult-blue transition-colors"
                             >
-                                info@mibkconsultancyltd.co.uk
+                                mibkconsultancyltd@gmail.com
+
                             </a>
                         </div>
 
