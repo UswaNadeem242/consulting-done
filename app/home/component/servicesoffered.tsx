@@ -110,7 +110,7 @@ const ServicesOffered = () => {
                     </div>
 
                     {/* 60+ Stats Block */}
-                    <div className="flex flex-col justify-end p-8 pb-10">
+                    {/* <div className="flex flex-col justify-end p-8 pb-10">
                         <h3 className="text-consult-sky text-6xl font-bold mb-1">60+</h3>
                         <p className="text-consult-blue text-[15px] font-semibold mb-8">Types of service</p>
 
@@ -118,7 +118,7 @@ const ServicesOffered = () => {
                             <span>VIEW ALL SERVICES</span>
                             <ArrowUpRight size={16} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                         </Link>
-                    </div>
+                    </div> */}
 
                 </div>
             </div>
