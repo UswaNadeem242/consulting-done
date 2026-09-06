@@ -268,6 +268,7 @@ import { MapPin, Mail, Phone, MessageCircle } from "lucide-react";
 import { supabase } from "../../../src/lib/supabase";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Link from "next/link";
 
 export default function ContactFormSection() {
     const [formData, setFormData] = useState({
@@ -660,38 +661,38 @@ export default function ContactFormSection() {
                         <div className="flex items-center gap-4">
                             <Mail className="text-consult-blue w-5 h-5 shrink-0" />
 
-                            <a
-                                href="mailto:info@mibkconsultancyltd.co.uk"
+                            <Link
+                                href="mailto:mibkconsultancyltd@gmail.com"
                                 className="text-axc-gray text-sm hover:text-consult-blue transition-colors"
                             >
                                 mibkconsultancyltd@gmail.com
 
-                            </a>
+                            </Link>
                         </div>
 
                         {/* PHONE */}
                         <div className="flex items-center gap-4">
                             <Phone className="text-consult-blue w-5 h-5 shrink-0" />
 
-                            <a
-                                href="tel:+447721575886"
+                            <Link
+                                href="https://wa.me/447721575886"
                                 className="text-axc-gray text-sm hover:text-consult-blue transition-colors"
                             >
                                 +44 7721 575886
-                            </a>
+                            </Link>
                         </div>
 
                         {/* WHATSAPP */}
-                        <div className="flex items-center gap-4">
+                        {/* <div className="flex items-center gap-4">
                             <MessageCircle className="text-consult-blue w-5 h-5 shrink-0" />
 
-                            <a
+                            <Link
                                 href="#"
                                 className="text-axc-gray text-sm hover:text-consult-blue transition-colors"
                             >
                                 Whatsapp Group
-                            </a>
-                        </div>
+                            </Link>
+                        </div> */}
                     </div>
                 </div>
             </div>

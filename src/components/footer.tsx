@@ -16,7 +16,7 @@ export default function Footer() {
                     <Image src={logo} alt="logo" width={150} height={100} />
                     {/* <h3 className="text-white font-bold text-lg mb-6 tracking-wide">Logo</h3> */}
                     <p className="text-white text-sm leading-relaxed mb-6 max-w-[250px] mt-2">
-                         MIBK Consultancy is Pakistan's trusted partner for studying abroad, offering personalized guidance on
+                        MIBK Consultancy is Pakistan's trusted partner for studying abroad, offering personalized guidance on
                         university admissions, scholarships, and student visas for the UK and USA.
                     </p>
                     <div className="flex items-center gap-4 text-white">
@@ -80,8 +80,9 @@ export default function Footer() {
                             <Link href="mailto:mibkconsultancyltd@gmail.com" className="hover:text-white transition-colors">mibkconsultancyltd@gmail.com</Link>
                         </p>
                         <p className='flex flex-col gap-1'>
-                            <Link href="tel:00923136244122" className="hover:text-white transition-colors">UK : +44 7721 575886</Link>
-                            <Link href="tel:14092124858" className="hover:text-white transition-colors">USA : +1 (409) 212-4858</Link>
+                            <Link href="https://wa.me/447721575886" className="hover:text-white transition-colors">UK : +44 7721 575886</Link>
+                            <Link href="https://wa.me/447378932008" className="hover:text-white transition-colors">UK : +44 7378932008</Link>
+                            <Link href="https://wa.me/14092124858" className="hover:text-white transition-colors">USA : +1 (409) 212-4858</Link>
                         </p>
                     </div>
                 </div>

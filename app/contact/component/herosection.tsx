@@ -1,11 +1,11 @@
 import React from 'react';
-
+import bg from "@/public/images/contact.jpg"
 export default function ContactHeroSection() {
     return (
         <section
-            className="relative w-full min-h-[400px] md:min-h-[300px] flex items-center justify-center overflow-hidden"
+            className="relative w-full min-h-[400px] md:min-h-[400px] flex items-center justify-center overflow-hidden"
             style={{
-                backgroundImage: "url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop')",
+                backgroundImage: `url(${bg.src})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
             }}

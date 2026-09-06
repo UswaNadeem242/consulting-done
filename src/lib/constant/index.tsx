@@ -96,7 +96,7 @@ export const TEAM_MEMBERS = [
   {
     id: 2,
     name: "Maryam Iqbal",
-    role: "Managing Director",
+    role: "Manager",
     image: img2,
   },
   {

@@ -1,7 +1,7 @@
 export default function AboutHeroSection() {
     return (
         <section
-            className="relative w-full min-h-[400px] md:min-h-[300px] flex items-center justify-center overflow-hidden border-b border-consult-blue"
+            className="relative w-full min-h-[400px] md:min-h-[400px] flex items-center justify-center overflow-hidden border-b border-consult-blue"
             style={{
                 backgroundImage: "url('https://images.unsplash.com/photo-1717653487195-13826a597888?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
                 backgroundSize: 'cover',
