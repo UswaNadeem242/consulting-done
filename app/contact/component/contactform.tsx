@@ -520,7 +520,7 @@ export default function ContactFormSection() {
                     <div className="flex flex-col md:flex-row bg-white shadow-[0_4px_20px_rgba(0,0,0,0.05)] rounded-lg overflow-hidden">
 
                         {/* FORM */}
-                        <div className="w-full md:w-1/2 p-6 md:p-8">
+                        <div className="w-full   p-6 md:p-8">
                             <form
                                 className="space-y-5"
                                 onSubmit={handleSubmit}
@@ -634,7 +634,7 @@ export default function ContactFormSection() {
                         </div>
 
                         {/* MAP */}
-                        <div className="w-full md:w-1/2 min-h-[300px] bg-gray-100">
+                        {/* <div className="w-full md:w-1/2 min-h-[300px] bg-gray-100">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13791.800057121652!2d71.4651378!3d30.2100067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b33df0fffffff%3A0x1d6e8a8b19e8c0e!2sGulistan-e-Ashar%20Colony%2C%20Multan%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s"
                                 className="w-full h-full border-0 min-h-[300px]"
@@ -642,7 +642,7 @@ export default function ContactFormSection() {
                                 loading="lazy"
                                 referrerPolicy="no-referrer-when-downgrade"
                             />
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 
@@ -680,6 +680,20 @@ export default function ContactFormSection() {
                             >
                                 +44 7721 575886
                             </Link>
+
+                        </div>
+
+                        {/* PHONE */}
+                        <div className="flex items-center gap-4">
+                            <Phone className="text-consult-blue w-5 h-5 shrink-0" />
+
+                            <Link
+                                href="https://wa.me/447378932008"
+                                className="text-axc-gray text-sm hover:text-consult-blue transition-colors"
+                            >
+                                +44 7378 932008
+                            </Link>
+
                         </div>
 
                         {/* WHATSAPP */}

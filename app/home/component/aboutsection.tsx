@@ -2,7 +2,7 @@ import React from 'react';
 import { Phone, ShieldCheck, Star } from 'lucide-react';
 import { Button } from '@/ui/button';
 import Image from 'next/image';
-import profile from "@/public/images/cerified.jpeg"
+import profile from "@/public/images/cerified.png"
 import about from "@/public/images/about.jpg"
 const AboutSection = () => {
     return (
@@ -97,7 +97,7 @@ const AboutSection = () => {
                         {/* Progress Widget (Absolute Positioned) */}
                         <div className="absolute -bottom-4 -left-4 sm:-bottom-8 sm:left-10 lg:-left-12 rounded-xl p-2 sm:p-8 flex flex-col items-center justify-center z-10 w-48 sm:w-72">
                             {/* Circular Progress Ring */}
-                            <Image src={profile} alt="profile" width={900} height={900} className="  object-cover" />
+                            {/* <Image src={profile} alt="profile" width={900} height={900} className="  object-cover" /> */}
 
                             {/* <div className="relative w-20 h-20 mb-5">
                                 <svg className="w-full h-full transform -rotate-90" viewBox="0 0 100 100">
