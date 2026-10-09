@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import { MotionHeading } from '@/src/components/motion';
 
 export default function MissionSection() {
     return (
@@ -10,9 +11,13 @@ export default function MissionSection() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
                 {/* Text Content */}
                 <div>
-                    <h2 className="text-black text-3xl md:text-4xl lg:text-5xl font-bold mb-6 lg:text-start text-center">
+                    <MotionHeading
+                        as="h2"
+                        direction="up"
+                        className="text-black text-3xl md:text-4xl lg:text-5xl font-bold mb-6 lg:text-start text-center"
+                    >
                         Our Expertise
-                    </h2>
+                    </MotionHeading>
                     <p className="text-axc-gray leading-relaxed lg:text-base text-sm font-normal lg:text-start text-center">
                         MIBK Consultancy is a trusted student consultancy dedicated to guiding students toward academic success.
                         From choosing the right course to securing your visa, we support you at every step of your journey to

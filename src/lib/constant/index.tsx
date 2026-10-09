@@ -10,10 +10,11 @@ export type NavLink = {
 
 export const navLinks: NavLink[] = [
   { label: 'Home', href: '/' },
-  //   { label: 'Company Profile', href: '/company-profile' },
   //   { label: 'Why Choose MIB Education Services', href: '/why-choose-mib' },
   //   { label: 'Destinations', href: '#', hasDropdown: true },
   { label: 'About', href: '/about' },
+  { label: 'How It Works', href: '/work' },
+  { label: 'Services', href: '/services' },
   { label: 'Contact', href: '/contact' },
 ];
 
@@ -193,4 +194,56 @@ export const FAQ_DATA = [
     answer: " Yes. We start every relationship with a no-obligation consultation to understand your goals before recommending any paid support."
   },
 
+];
+
+export interface ProcessCardItem {
+  id?: string | number;
+  step?: string;
+  title: string;
+  description: string;
+}
+
+export const PROCESS_ITEMS: ProcessCardItem[] = [
+  {
+    id: 1,
+    step: "01",
+    title: "Free Consultation",
+    description:
+      "We start by understanding your academic background, career goals, budget, and destination preferences. We review your profile with complete transparency.",
+  },
+  {
+    id: 2,
+    step: "02",
+    title: "Personalized Roadmap & Shortlist",
+    description:
+      "We help you build a curated shortlist of well-matched universities, realistic application timelines, and verified entry requirements.",
+  },
+  {
+    id: 3,
+    step: "03",
+    title: "Application & Document Support",
+    description:
+      "Step-by-step guidance in preparing persuasive Statements of Purpose (SOP), academic recommendation letters, and polished portal submissions.",
+  },
+  {
+    id: 4,
+    step: "04",
+    title: "Scholarship & Financial Guidance",
+    description:
+      "We identify merit-based and departmental scholarships, evaluate financial aid eligibility, and ensure all funding criteria are accurately addressed.",
+  },
+  {
+    id: 5,
+    step: "05",
+    title: "Visa Guidance & Mock Interviews",
+    description:
+      "Complete assistance with CAS/I-20 validation, bank documentation audits, visa filing, and destination-specific mock interview preparation.",
+  },
+  {
+    id: 6,
+    step: "06",
+    title: "Pre-Departure & Arrival Support",
+    description:
+      "Assistance with accommodation search, flight booking guidance, travel checklists, local registration, and settling smoothly into your university.",
+  },
 ];

@@ -3,6 +3,8 @@ import { Star } from 'lucide-react';
 import { cardsData } from '@/src/lib/constant';
 import visa from "@/public/images/visa.jpg"
 import Image from 'next/image';
+import { MotionHeading } from '@/src/components/motion';
+
 function WorkSection() {
 
 
@@ -10,15 +12,6 @@ function WorkSection() {
         <section className='section-py bg-consult-blue overflow-hidden'>
             <div className='container-axc mx-auto lg:px-6 px-4'>
 
-                {/* Header */}
-                {/* <div className="flex flex-col items-center mb-16">
-                    <div className="border border-black/30 rounded px-4 py-1.5 mb-5">
-                        <span className="text-black text-xs font-bold tracking-widest uppercase">OUR WORKING PROCESS</span>
-                    </div>
-                    <h2 className='text-black lg:text-5xl text-4xl font-bold text-center'>
-                        Easy 3 Steps To Work
-                    </h2>
-                </div> */}
                 <div className="text-center mb-16 flex flex-col items-center">
                     <div className="flex items-center justify-center gap-2 mb-4">
                         <p className="text-white text-xs font-bold tracking-widest uppercase flex items-center gap-2">
@@ -32,10 +25,13 @@ function WorkSection() {
                         <div className="h-px w-8 bg-white"></div>
                     </div>
 
-                    <h2 className="text-white text-4xl lg:text-5xl font-bold">
+                    <MotionHeading
+                        as="h2"
+                        direction="up"
+                        className="text-white text-4xl lg:text-5xl font-bold"
+                    >
                         Your Journey to Studying Abroad, Made Simple
-
-                    </h2>
+                    </MotionHeading>
                 </div>
 
 
@@ -59,9 +55,9 @@ function WorkSection() {
                                 <div className="w-10 sm:w-16 h-0 border-t-[3px] border-dotted border-gray-500/60 shrink-0 mx-2 md:block hidden"></div>
 
                                 {/* The card */}
-                                <div className="flex-grow bg-white/15 rounded-xl p-8 relative ml-4 sm:ml-6 transition-colors cursor-pointer group hover:bg-white/20">
+                                <div className="flex-grow bg-white/15 rounded-xl p-8 relative ml-4 sm:ml-6 transition-colors  group hover:bg-white/20">
                                     {/* Number badge */}
-                                    <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-consult-sky text-white text-[11px] font-bold flex items-center justify-center shadow-inner group-hover:scale-110 transition-transform">
+                                    <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-consult-sky text-white text-sm font-bold flex items-center justify-center shadow-inner group-hover:scale-110 transition-transform">
                                         0{index + 1}
                                     </div>
 

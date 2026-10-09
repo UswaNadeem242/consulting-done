@@ -1,6 +1,7 @@
 import React from 'react';
 import { FileText, Package, FileCheck, MonitorPlay, MessageSquare, ArrowUpRight, Star } from 'lucide-react';
 import Link from 'next/link';
+import { MotionHeading, ScrollReveal } from '@/src/components/motion';
 
 const ServicesOffered = () => {
     return (
@@ -13,101 +14,100 @@ const ServicesOffered = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
                     {/* Title Block (Spans 2 columns) */}
-                    {/* <div className="lg:col-span-2 flex flex-col justify-start pt-4 pr-10 mb-8 lg:mb-0">
-                        <div className="border border-black/30 inline-block px-4 py-1.5 text-black text-sm font-bold w-max mb-6 tracking-wide">
-                            OUR SERVICES
-                        </div>
-                        <h2 className="text-black text-4xl lg:text-5xl font-bold leading-[1.2]">
-                            Comprehensive immigration and visa services
-                        </h2>
-                    </div> */}
                     <div className="text-center lg:text-left lg:col-span-2 flex flex-col justify-center lg:justify-start pt-4 lg:pr-10 mb-4 lg:mb-0">
                         <div className="flex items-center justify-center lg:justify-start gap-2 mb-4">
                             <p className="text-black text-xs font-bold tracking-widest uppercase flex items-center gap-2">
                                 OUR SERVICES
                             </p>
                         </div>
-                        {/* Star with lines */}
-                        {/* <div className="flex items-center justify-left gap-2 mb-4">
-                            <div className="h-px w-8 bg-black"></div>
-                            <Star size={12} fill="#07294D" className="text-black" />
-                            <div className="h-px w-8 bg-black"></div>
-                        </div> */}
 
-                        <h2 className="text-black text-4xl text-center lg:text-start lg:text-5xl font-bold">
+                        <MotionHeading
+                            as="h2"
+                            direction="up"
+                            className="text-black text-4xl text-center lg:text-start lg:text-5xl font-bold"
+                        >
                             Complete Study Abroad Support, From Admission to Visa
+                        </MotionHeading>
 
-                        </h2>
-                        <p className='text-axc-gray text-sm text-center lg:text-start w-full  leading-relaxed lg:mb-10  lg:max-w-lg font-medium lg:pt-4 pt-2'>From selecting the right university to preparing for your student visa, MIBK Consultancy provides personalized support at every stage of your study abroad journey.
-                        </p>
+                        <ScrollReveal direction="up" delay={0.15}>
+                            <p className='text-axc-gray text-sm text-center lg:text-start w-full leading-relaxed lg:mb-10 lg:max-w-lg font-medium lg:pt-4 pt-2'>
+                                From selecting the right university to preparing for your student visa, MIBK Consultancy provides personalized support at every stage of your study abroad journey.
+                            </p>
+                        </ScrollReveal>
                     </div>
                     {/* Service 1: Application assistance */}
-                    <div className="bg-[#0e2554] p-8 rounded-xl flex flex-col hover:bg-[#14326e] transition-colors cursor-pointer group">
-                        <div className="mb-14 relative w-10 h-10">
-                            <FileText size={40} className="text-white group-hover:scale-110 transition-transform origin-bottom-left" strokeWidth={1.5} />
+                    <ScrollReveal direction="up" delay={0.1} className="h-full">
+                        <div className="bg-[#0e2554] p-8 rounded-xl flex flex-col hover:bg-[#14326e] transition-colors cursor-pointer group h-full">
+                            <div className="mb-14 relative w-10 h-10">
+                                <FileText size={40} className="text-white group-hover:scale-110 transition-transform origin-bottom-left" strokeWidth={1.5} />
+                            </div>
+                            <h3 className="text-white text-lg font-bold mb-3">University Admissions Assistance</h3>
+                            <p className="text-blue-100 text-sm leading-relaxed opacity-80">
+                               Get expert guidance in shortlisting and applying to universities that match your academic profile, goals, and budget.
+                            </p>
                         </div>
-                        <h3 className="text-white text-lg font-bold mb-3">University Admissions Assistance</h3>
-                        <p className="text-blue-100 text-sm leading-relaxed opacity-80">
-                           Get expert guidance in shortlisting and applying to universities that match your academic profile, goals, and budget.
-
-                        </p>
-                    </div>
+                    </ScrollReveal>
 
                     {/* Service 2: Visa guidance */}
-                    <div className="bg-[#0e2554] p-8 rounded-xl flex flex-col hover:bg-[#14326e] transition-colors cursor-pointer group">
-                        <div className="mb-14 relative w-10 h-10">
-                            <Package size={40} className="text-white group-hover:scale-110 transition-transform origin-bottom-left" strokeWidth={1.5} />
+                    <ScrollReveal direction="up" delay={0.2} className="h-full">
+                        <div className="bg-[#0e2554] p-8 rounded-xl flex flex-col hover:bg-[#14326e] transition-colors cursor-pointer group h-full">
+                            <div className="mb-14 relative w-10 h-10">
+                                <Package size={40} className="text-white group-hover:scale-110 transition-transform origin-bottom-left" strokeWidth={1.5} />
+                            </div>
+                            <h3 className="text-white text-lg font-bold mb-3">Course & Career Counseling</h3>
+                            <p className="text-blue-100 text-sm leading-relaxed opacity-80">
+                                Choose a course and career direction that aligns with your strengths, academic background, and future ambitions.
+                            </p>
                         </div>
-                        <h3 className="text-white text-lg font-bold mb-3">Course & Career Counseling</h3>
-                        <p className="text-blue-100 text-sm leading-relaxed opacity-80">
-                            Choose a course and career direction that aligns with your strengths, academic background, and future ambitions.
-
-                        </p>
-                    </div>
+                    </ScrollReveal>
 
                     {/* Service 3: Document preparation */}
-                    <div className="bg-[#0e2554] p-8 rounded-xl flex flex-col hover:bg-[#14326e] transition-colors cursor-pointer group">
-                        <div className="mb-14 relative w-10 h-10">
-                            <FileCheck size={40} className="text-white group-hover:scale-110 transition-transform origin-bottom-left" strokeWidth={1.5} />
-                            <div className="absolute -bottom-1 -right-2 w-5 h-5 bg-[#214BE0] rounded-full flex items-center justify-center">
-                                <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
+                    <ScrollReveal direction="up" delay={0.3} className="h-full">
+                        <div className="bg-[#0e2554] p-8 rounded-xl flex flex-col hover:bg-[#14326e] transition-colors cursor-pointer group h-full">
+                            <div className="mb-14 relative w-10 h-10">
+                                <FileCheck size={40} className="text-white group-hover:scale-110 transition-transform origin-bottom-left" strokeWidth={1.5} />
+                                <div className="absolute -bottom-1 -right-2 w-5 h-5 bg-[#214BE0] rounded-full flex items-center justify-center">
+                                    <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
+                                </div>
                             </div>
+                            <h3 className="text-white text-lg font-bold mb-3">Student Visa Guidance</h3>
+                            <p className="text-blue-100 text-sm leading-relaxed opacity-80">
+                               Receive step-by-step guidance through the UK and USA student visa process, from documentation to application submission.
+                            </p>
                         </div>
-                        <h3 className="text-white text-lg font-bold mb-3">Student Visa Guidance</h3>
-                        <p className="text-blue-100 text-sm leading-relaxed opacity-80">
-                           Receive step-by-step guidance through the UK and USA student visa process, from documentation to application submission.
-
-                        </p>
-                    </div>
+                    </ScrollReveal>
 
                     {/* Service 4: Visa Tracking */}
-                    <div className="bg-[#0e2554] p-8 rounded-xl flex flex-col hover:bg-[#14326e] transition-colors cursor-pointer group">
-                        <div className="mb-14 relative w-10 h-10">
-                            <MonitorPlay size={40} className="text-white group-hover:scale-110 transition-transform origin-bottom-left" strokeWidth={1.5} />
-                            <div className="absolute -bottom-1 -right-2 w-5 h-5 bg-[#214BE0] rounded-full flex items-center justify-center">
-                                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" /></svg>
+                    <ScrollReveal direction="up" delay={0.4} className="h-full">
+                        <div className="bg-[#0e2554] p-8 rounded-xl flex flex-col hover:bg-[#14326e] transition-colors cursor-pointer group h-full">
+                            <div className="mb-14 relative w-10 h-10">
+                                <MonitorPlay size={40} className="text-white group-hover:scale-110 transition-transform origin-bottom-left" strokeWidth={1.5} />
+                                <div className="absolute -bottom-1 -right-2 w-5 h-5 bg-[#214BE0] rounded-full flex items-center justify-center">
+                                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" /></svg>
+                                </div>
                             </div>
+                            <h3 className="text-white text-lg font-bold mb-3">Scholarship & Funding Assistance</h3>
+                            <p className="text-blue-100 text-sm leading-relaxed opacity-80">
+                               Identify suitable scholarship and funding opportunities and get support with the application process.
+                            </p>
                         </div>
-                        <h3 className="text-white text-lg font-bold mb-3">Scholarship & Funding Assistance</h3>
-                        <p className="text-blue-100 text-sm leading-relaxed opacity-80">
-                           Identify suitable scholarship and funding opportunities and get support with the application process.
-
-                        </p>
-                    </div>
+                    </ScrollReveal>
 
                     {/* Service 5: Language Proficiency */}
-                    <div className="bg-[#0e2554] p-8 rounded-xl flex flex-col hover:bg-[#14326e] transition-colors cursor-pointer group">
-                        <div className="mb-14 relative w-10 h-10">
-                            <MessageSquare size={40} className="text-white group-hover:scale-110 transition-transform origin-bottom-left" strokeWidth={1.5} />
-                            <div className="absolute -bottom-1 -right-2 w-6 h-6 bg-[#214BE0] rounded-full flex items-center justify-center text-[9px] font-bold text-white tracking-tighter">
-                                EN
+                    <ScrollReveal direction="up" delay={0.5} className="h-full">
+                        <div className="bg-[#0e2554] p-8 rounded-xl flex flex-col hover:bg-[#14326e] transition-colors cursor-pointer group h-full">
+                            <div className="mb-14 relative w-10 h-10">
+                                <MessageSquare size={40} className="text-white group-hover:scale-110 transition-transform origin-bottom-left" strokeWidth={1.5} />
+                                <div className="absolute -bottom-1 -right-2 w-6 h-6 bg-[#214BE0] rounded-full flex items-center justify-center text-[9px] font-bold text-white tracking-tighter">
+                                    EN
+                                </div>
                             </div>
+                            <h3 className="text-white text-lg font-bold mb-3">Statement of Purpose Writing</h3>
+                            <p className="text-blue-100 text-sm leading-relaxed opacity-80">
+                               Get personalized SOP support designed to present your genuine academic journey, goals, and story clearly.
+                            </p>
                         </div>
-                        <h3 className="text-white text-lg font-bold mb-3">Statement of Purpose Writing</h3>
-                        <p className="text-blue-100 text-sm leading-relaxed opacity-80">
-                           Get personalized SOP support designed to present your genuine academic journey, goals, and story clearly.
-                     </p>
-                    </div>
+                    </ScrollReveal>
 
                     {/* 60+ Stats Block */}
                     {/* <div className="flex flex-col justify-end p-8 pb-10">

@@ -6,6 +6,8 @@ import InstagramSvgIcon from "@/public/icon/instagram"
 import LinkdeinSvgIcon from "@/public/icon/linkdein"
 import Link from 'next/link';
 import Image from 'next/image';
+import { MotionHeading } from '@/src/components/motion';
+
 const Leadership = () => {
   return (
     <section className="relative py-24 bg-[#FAFAFA] overflow-hidden">
@@ -34,9 +36,13 @@ const Leadership = () => {
             <div className="h-px w-8 bg-black"></div>
           </div>
 
-          <h2 className="text-black text-4xl lg:text-5xl font-bold">
+          <MotionHeading
+            as="h2"
+            direction="up"
+            className="text-black text-4xl lg:text-5xl font-bold"
+          >
             Our Team at Your Service
-          </h2>
+          </MotionHeading>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-20 max-w-6xl mx-auto pt-4 pb-10">

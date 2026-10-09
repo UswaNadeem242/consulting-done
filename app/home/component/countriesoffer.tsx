@@ -1,17 +1,12 @@
 import React from 'react';
 import { ArrowUpRight, Star } from 'lucide-react';
 import { DESTINATION } from '@/src/lib/constant';
-
-
+import { MotionHeading } from '@/src/components/motion';
 
 const CountriesOffer = () => {
     return (
         <section className="section-py bg-white">
             <div className="container-axc mx-auto px-6">
-                {/* <h2 className="text-black lg:text-5xl text-4xl font-semibold text-center mb-12">
-                    Countries We Offer
-                </h2> */}
-
                 <div className="text-center mb-16 flex flex-col items-center">
                     <div className="flex items-center justify-center gap-2 mb-4">
                         <p className="text-black text-xs font-bold tracking-widest uppercase flex items-center gap-2">
@@ -25,10 +20,13 @@ const CountriesOffer = () => {
                         <div className="h-px w-8 bg-black"></div>
                     </div>
 
-                    <h2 className="text-black text-4xl lg:text-5xl font-bold">
-                   Study in the UK or USA with the Right Guidance
-
-                    </h2>
+                    <MotionHeading
+                        as="h2"
+                        direction="up"
+                        className="text-black text-4xl lg:text-5xl font-bold"
+                    >
+                        Study in the UK or USA with the Right Guidance
+                    </MotionHeading>
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">

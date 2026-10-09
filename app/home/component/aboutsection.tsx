@@ -4,6 +4,8 @@ import { Button } from '@/ui/button';
 import Image from 'next/image';
 import profile from "@/public/images/cerified.png"
 import about from "@/public/images/about.jpg"
+import { MotionHeading } from '@/src/components/motion';
+
 const AboutSection = () => {
     return (
         <section className="bg-white lg:py-20 lg:px-6 py-8 px-0 overflow-hidden">
@@ -27,10 +29,12 @@ const AboutSection = () => {
                                 <div className="h-px w-8 bg-black"></div>
                             </div> */}
 
-                            <h2 className="text-black text-3xl sm:text-4xl lg:text-5xl font-bold max-w-md lg:max-w-2xl">
+                            <MotionHeading
+                                as="h2"
+                                className="text-black text-3xl sm:text-4xl lg:text-5xl font-bold max-w-md lg:max-w-2xl"
+                            >
                                 Personalized Guidance for Your Study Abroad Journey
-
-                            </h2>
+                            </MotionHeading>
                         </div>
 
 

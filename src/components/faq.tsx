@@ -3,8 +3,7 @@
 import React, { useState } from 'react';
 import { Search, Plus, X, Minus } from 'lucide-react';
 import { FAQ_DATA } from '../lib/constant';
-
-
+import { MotionHeading } from './motion';
 
 const FAQ = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -17,13 +16,16 @@ const FAQ = () => {
   const filteredFaqs = FAQ_DATA
 
   return (
-    <section className="bg-white  py-20 px-6">
+    <section className="bg-white  lg:pt-20 pt-8 px-6">
       <div className="max-w-3xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-10">
-          <h2 className="text-black text-3xl sm:text-4xl lg:text-5xl font-bold max-w-md lg:max-w-2xl">
+        <div className="text-center mb-10 flex justify-center">
+          <MotionHeading
+            as="h2"
+            className="text-black text-3xl sm:text-4xl lg:text-5xl font-bold max-w-md lg:max-w-2xl text-center"
+          >
             Frequently Asked Questions
-          </h2>
+          </MotionHeading>
 
           {/* Search Bar */}
            

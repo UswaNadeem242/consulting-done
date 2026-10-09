@@ -2,6 +2,7 @@ import React from 'react';
 import { Check, Star } from 'lucide-react';
 import { POINTS } from '@/src/lib/constant';
 import Image from 'next/image';
+import { MotionHeading } from '@/src/components/motion';
 
 export default function ChooseUs() {
 
@@ -10,7 +11,7 @@ export default function ChooseUs() {
         <section className="flex flex-col lg:flex-row w-full min-h-[600px] overflow-hidden">
 
             {/* Left Side: Content */}
-            <div className="w-full lg:w-1/2 bg-consult-blue p-4 sm:p-10 lg:p-20 xl:pl-16 flex flex-col justify-center relative">
+            <div className="w-full lg:w-1/2 bg-consult-blue p-4 sm:p-8 lg:p-20 xl:pl-16 flex flex-col justify-center relative">
 
                 {/* Abstract Background Shapes */}
                 <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
@@ -19,14 +20,6 @@ export default function ChooseUs() {
                 </div>
 
                 <div className="relative z-10 max-w-2xl">
-                    {/* <p className="text-white text-sm font-semibold mb-3 tracking-wide">
-                        Why choose us
-                    </p>
-                    <h2 className="text-white text-4xl lg:text-5xl xl:text-6xl font-bold mb-14 leading-[1.15]">
-                        Why choosing our consulting is the best.
-                    </h2> */}
-
-
                     <div className="lg:col-span-2 flex flex-col items-center lg:items-start pt-4 lg:pr-10 mb-8 lg:mb-0 text-center lg:text-left">
 
                         {/* Heading Label */}
@@ -44,10 +37,13 @@ export default function ChooseUs() {
                         </div>
 
                         {/* Title */}
-                        <h2 className="text-white text-4xl lg:text-5xl font-bold lg:mb-14 mb-0 max-w-md lg:max-w-2xl">
+                        <MotionHeading
+                            as="h2"
+                            direction="up"
+                            className="text-white text-4xl lg:text-5xl font-bold lg:mb-14 mb-0 max-w-md lg:max-w-2xl"
+                        >
                           Why Students Choose MIBK Consultancy
-
-                        </h2>
+                        </MotionHeading>
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-6">
